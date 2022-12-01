@@ -8,7 +8,7 @@
 
 /* Navigation bar Styles */
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
 }
