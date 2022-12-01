@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -6,13 +6,15 @@
   box-sizing: border-box;
 }
 
+/* Bar Status Style */
+
 #bar-status-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
   width: 375px;
   height: 92px;
+  margin-left: calc(50% - 375px / 2);
 }
 
 .bar-status-icons {
@@ -28,4 +30,36 @@
   font-weight: 500;
   width: 54px;
   height: 16px;
+  margin-top: 13px;
+  margin-left: 21px;
+}
+
+/* Navigation bar Styles */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger {
+  margin-right: 24px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #101010;
+}
+
+.logo-text {
+  width: 90px;
+  height: 28px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
 }
