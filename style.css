@@ -103,3 +103,43 @@ section {
 .social-media-icons li {
   list-style-type: none;
 }
+
+/*  Recent Works Section Styling */
+
+.recent_works_container {
+  width: 379px;
+  height: 3283px;
+}
+
+.works_heading {
+  width: 327px;
+  height: 97px;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.indicator {
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-color: #36b37e;
+}
+
+.single_project_card {
+  width: 327px;
+  height: 474px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
