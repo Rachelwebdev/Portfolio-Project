@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  width: 375px;
 }
 
 .hamburger {
@@ -96,4 +97,9 @@ section {
   flex-grow: 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-media-icons li {
+  list-style-type: none;
 }
