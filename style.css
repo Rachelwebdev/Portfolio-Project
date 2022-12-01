@@ -11,6 +11,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
 }
 
 .hamburger {
@@ -34,6 +35,8 @@ header {
   align-items: center;
   text-align: center;
   margin-left: 12px;
+  color: #28352f;
+  text-decoration: none;
 }
 
 /* Headline Section Styling */
