@@ -6,34 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Bar Status Style */
-
-#bar-status-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 375px;
-  height: 92px;
-  margin-left: calc(50% - 375px / 2);
-}
-
-.bar-status-icons {
-  width: 67px;
-  height: 11px;
-}
-
-.time {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 16.41px;
-  text-align: center;
-  font-weight: 500;
-  width: 54px;
-  height: 16px;
-  margin-top: 13px;
-  margin-left: 21px;
-}
-
 /* Navigation bar Styles */
 
 nav {
