@@ -1,3 +1,31 @@
-h1 {
-  color: green;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bar-status-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 375px;
+  height: 92px;
+}
+
+.bar-status-icons {
+  width: 67px;
+  height: 11px;
+}
+
+.time {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: center;
+  font-weight: 500;
+  width: 54px;
+  height: 16px;
 }
