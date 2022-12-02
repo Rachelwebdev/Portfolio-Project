@@ -40,6 +40,14 @@ header {
   text-decoration: none;
 }
 
+/* Main Section */
+main {
+  width: 390px;
+  height: 6715px;
+  background-color: #fff;
+  padding: 0 24px;
+}
+
 /* Headline Section Styling */
 
 #headline-container {
@@ -113,6 +121,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 64px 24px;
+  margin-bottom: 10rem;
 }
 
 .heading-container {
@@ -158,6 +167,8 @@ header {
   row-gap: 58px;
 }
 
+/* Individual card styling for projects */
+
 .single_project_card {
   width: 327px;
   height: 474px;
@@ -166,6 +177,7 @@ header {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   overflow: hidden;
+  /* position: absolute; */
 }
 
 .card-1 {
@@ -327,4 +339,43 @@ header {
   padding: 12px;
   gap: 10px;
   background-color: #008552;
+}
+
+/* About myself section styling */
+.about_myself_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+  position: absolute;
+  width: 375px;
+  height: 1625px;
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 351px;
+  height: 333px;
+  margin: 64px 12px 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about_me_heading {
+  width: 351px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-style: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #172b4d;
 }
