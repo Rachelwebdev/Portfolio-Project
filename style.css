@@ -342,9 +342,6 @@ main {
 
 /* About myself section styling */
 .about_myself_container {
-  background-image: url("./images/about-me-illustration.png");
-  background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,10 +358,10 @@ main {
   align-items: center;
   gap: 24px;
   width: 351px;
-  height: 333px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  border: 1px solid red;
 }
 
 .about_me_heading {
