@@ -301,3 +301,12 @@ section {
   align-items: center;
   text-align: justify;
 }
+
+.project-btn:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background-color: #008552;
+}
