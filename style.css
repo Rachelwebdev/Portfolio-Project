@@ -6,13 +6,24 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  margin-inline: auto;
+}
+
+.main-container {
+  width: 100%;
+}
+
 /* Navigation bar Styles */
 
 header {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
-  width: 375px;
+  width: 100%;
+  padding-inline: 24px;
 }
 
 .hamburger {
@@ -28,8 +39,6 @@ header {
 }
 
 .logo-text {
-  width: 90px;
-  height: 28px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -42,10 +51,10 @@ header {
 
 /* Main Section */
 main {
-  width: 390px;
-  height: 6715px;
+  width: 95vw;
+  height: auto;
   background-color: #fff;
-  padding: 0 24px;
+  margin: auto;
 }
 
 /* Headline Section Styling */
@@ -53,9 +62,9 @@ main {
 #headline-container {
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 375px;
-  height: 606px;
+  background-size: 100%;
+  width: 95vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,8 +73,8 @@ main {
 }
 
 .header-text {
-  width: 327px;
-  height: 192px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -83,8 +92,8 @@ main {
 }
 
 .profile-description {
-  width: 327px;
-  height: 164px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -98,8 +107,8 @@ main {
 }
 
 .social-media-icons {
-  width: 170.17px;
-  height: 20px;
+  width: 70vw;
+  height: auto;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -115,13 +124,13 @@ main {
 /*  Recent Works Section Styling */
 
 .recent_works_container {
-  width: 379px;
-  height: 3283px;
+  width: 95vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 64px 24px;
-  margin-bottom: 10rem;
+  margin: auto;
 }
 
 .heading-container {
@@ -133,15 +142,14 @@ main {
 }
 
 .works_heading {
-  width: 327px;
-  height: 97px;
+  width: 95vw;
+  height: auto;
   color: #172b4d;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   text-align: center;
   gap: 24px;
@@ -170,8 +178,8 @@ main {
 /* Individual card styling for projects */
 
 .single_project_card {
-  width: 327px;
-  height: 474px;
+  width: 95vw;
+  height: 100vh;
   flex: none;
   flex-grow: 0;
   border: 1px solid #d0d9d4;
@@ -216,21 +224,22 @@ main {
   align-items: center;
   padding: 16px;
   gap: 16px;
-  width: 327px;
-  height: 222px;
+  width: 95vw;
+  height: auto;
   background-color: #fff;
   border-radius: 8px;
 }
 
 .project_title {
   font-family: "Inter", sans-serif;
-  width: 295px;
-  height: 57px;
+  width: 95vw;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: #3a4a42;
@@ -245,8 +254,8 @@ main {
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  width: 305px;
-  height: 32px;
+  width: 90vw;
+  height: auto;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -276,38 +285,27 @@ main {
 }
 
 .ruby {
-  width: 103px;
-  height: 32px;
   order: 0;
 }
 
 .css {
-  width: 45px;
-  height: 32px;
   padding: 8px 12px;
   order: 1;
 }
 
 .javascript {
-  width: 82px;
-  height: 32px;
   order: 2;
 }
 
 .html {
-  width: 51px;
-  height: 32px;
   order: 3;
 }
 
 .project-btn {
   display: flex;
-  width: 122px;
-  height: 48px;
   background-color: #36b37f;
   border-radius: 4px;
   padding: 12px;
-  gap: 10px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -348,47 +346,56 @@ main {
   padding: 64px 24px;
   gap: 58px;
   position: absolute;
-  width: 375px;
-  height: 1625px;
+  width: 95vw;
+  height: auto;
 }
 
 .about_me {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  width: 351px;
+  gap: 6px;
+  width: 95vw;
+  height: auto;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
+.illustration-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+}
+
+.illustration-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
 .about_me_heading {
-  width: 351px;
-  height: 48px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-style: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   color: #172b4d;
 }
 
 .about_me_description {
-  width: 351px;
-  height: 189px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .resume_btn {
@@ -401,9 +408,6 @@ main {
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
   border: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -412,6 +416,7 @@ main {
   line-height: 24px;
   text-align: center;
   color: #fff;
+  margin: auto;
 }
 
 /* Languages, Frameworks and Skills Cards Styling */
@@ -423,8 +428,8 @@ main {
   align-items: center;
   padding: 1px;
   gap: 24px;
-  width: 327px;
-  height: 1106px;
+  width: 95vw;
+  height: auto;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -432,8 +437,8 @@ main {
 }
 
 .card {
-  width: 327px;
-  height: 352px;
+  width: 95vw;
+  height: 70vh;
   flex: none;
   flex-grow: 0;
   background-color: #ebf0ee;
@@ -469,8 +474,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  width: 327px;
-  height: 96px;
 }
 
 .framework-container,
@@ -479,8 +482,6 @@ main {
 }
 
 .heading {
-  width: 337px;
-  height: 32px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -498,8 +499,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  width: 271px;
-  height: 40px;
   flex: none;
   order: 1;
   flex-grow: 0;
