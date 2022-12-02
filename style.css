@@ -342,6 +342,9 @@ main {
 
 /* About myself section styling */
 .about_myself_container {
+  background-image: url("./images/about-me-illustration.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -492,10 +495,13 @@ main {
   color: #344563;
 }
 
-.language_list {
+.language_list,
+.frameworks_list,
+.skills_list {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   width: 271px;
   height: 40px;
@@ -506,7 +512,9 @@ main {
   margin: 0 auto;
 }
 
-.language_list li {
+.language_list li,
+.frameworks_list li,
+.skills_list li {
   background-color: #fff;
   padding: 12px;
   border-radius: 8px;
@@ -516,4 +524,20 @@ main {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+}
+
+.resume_btn:hover {
+  width: 120px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  display: flex;
+  align-items: center;
+}
+
+.resume_btn:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background-color: #008552;
 }
