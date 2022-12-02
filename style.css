@@ -379,3 +379,17 @@ main {
   flex-grow: 0;
   color: #172b4d;
 }
+
+.about_me_description {
+  width: 351px;
+  height: 189px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
