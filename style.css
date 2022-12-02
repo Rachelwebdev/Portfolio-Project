@@ -361,7 +361,6 @@ main {
   flex: none;
   order: 0;
   flex-grow: 0;
-  border: 1px solid red;
 }
 
 .about_me_heading {
