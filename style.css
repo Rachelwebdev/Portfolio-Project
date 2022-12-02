@@ -54,7 +54,7 @@ main {
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 376px;
+  width: 375px;
   height: 606px;
   display: flex;
   flex-direction: column;
@@ -362,7 +362,6 @@ main {
   gap: 24px;
   width: 351px;
   height: 333px;
-  margin: 64px 12px 0;
   flex: none;
   order: 0;
   flex-grow: 0;
