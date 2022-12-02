@@ -419,3 +419,101 @@ main {
 /* Languages, Frameworks and Skills Cards Styling */
 
 /* Languages Card Syles */
+.language_framework_skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  gap: 24px;
+  width: 327px;
+  height: 1106px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 327px;
+  height: 352px;
+  flex: none;
+  flex-grow: 0;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages_card {
+  order: 0;
+}
+
+.frameworks_card {
+  order: 1;
+}
+
+.skills_card {
+  order: 2;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.language-container,
+.framework-container,
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 327px;
+  height: 96px;
+}
+
+.framework-container,
+.skills-container {
+  height: 144px;
+}
+
+.heading {
+  width: 337px;
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.language_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 271px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.language_list li {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  color: #36b37e;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
