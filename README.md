@@ -84,8 +84,6 @@ Click on the live server button on your IDE
 
 ### Future Features <a name="future-features"></a>
 
-- A Project section showcasing my recent works
-- An About me section
 - A Contact me section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
