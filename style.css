@@ -6,13 +6,24 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  margin-inline: auto;
+}
+
+.main-container {
+  width: 100%;
+}
+
 /* Navigation bar Styles */
 
 header {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
-  width: 375px;
+  width: 100%;
+  padding-inline: 24px;
 }
 
 .hamburger {
@@ -28,8 +39,6 @@ header {
 }
 
 .logo-text {
-  width: 90px;
-  height: 28px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -40,14 +49,22 @@ header {
   text-decoration: none;
 }
 
+/* Main Section */
+main {
+  width: 95vw;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+}
+
 /* Headline Section Styling */
 
-section {
+#headline-container {
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 376px;
-  height: 606px;
+  background-size: 100%;
+  width: 95vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,8 +73,8 @@ section {
 }
 
 .header-text {
-  width: 327px;
-  height: 192px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -75,8 +92,8 @@ section {
 }
 
 .profile-description {
-  width: 327px;
-  height: 164px;
+  width: 95vw;
+  height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -90,8 +107,8 @@ section {
 }
 
 .social-media-icons {
-  width: 170.17px;
-  height: 20px;
+  width: 70vw;
+  height: auto;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -102,4 +119,419 @@ section {
 
 .social-media-icons li {
   list-style-type: none;
+}
+
+/*  Recent Works Section Styling */
+
+.recent_works_container {
+  width: 95vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  margin: auto;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.works_heading {
+  width: 95vw;
+  height: auto;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 30px;
+}
+
+.indicator {
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 24px;
+  flex: none;
+  flex-grow: 0;
+  order: 1;
+  background-color: #36b37e;
+}
+
+.project_section {
+  display: grid;
+  row-gap: 58px;
+}
+
+/* Individual card styling for projects */
+
+.single_project_card {
+  width: 95vw;
+  height: 100vh;
+  flex: none;
+  flex-grow: 0;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-1 {
+  order: 0;
+}
+
+.card-2 {
+  order: 1;
+}
+
+.card-3 {
+  order: 2;
+}
+
+.card-4 {
+  order: 3;
+}
+
+.card-5 {
+  order: 4;
+}
+
+.card-6 {
+  order: 5;
+}
+
+.project_img_placeholder {
+  background-color: #ebf0ee;
+  border-radius: 8px;
+  height: 50%;
+  overflow: hidden;
+}
+
+.project_title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 95vw;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.project_title {
+  font-family: "Inter", sans-serif;
+  width: 95vw;
+  height: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 16px;
+}
+
+.technologies_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: 90vw;
+  height: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 16px;
+}
+
+.technologies_container li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.technology {
+  flex: none;
+  flex-grow: 0;
+  padding: 8px 12px;
+  background-color: #ebf0ee;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  border-radius: 4px;
+}
+
+.ruby {
+  order: 0;
+}
+
+.css {
+  padding: 8px 12px;
+  order: 1;
+}
+
+.javascript {
+  order: 2;
+}
+
+.html {
+  order: 3;
+}
+
+.project-btn {
+  display: flex;
+  background-color: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.project-btn:hover {
+  width: 91px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.project-btn:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background-color: #008552;
+}
+
+/* About myself section styling */
+.about_myself_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 58px;
+  position: absolute;
+  width: 95vw;
+  height: auto;
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 95vw;
+  height: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.illustration-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+}
+
+.illustration-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+}
+
+.about_me_heading {
+  width: 95vw;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-style: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.about_me_description {
+  width: 95vw;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+.resume_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 159px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+
+/* Languages, Frameworks and Skills Cards Styling */
+
+/* Languages Card Syles */
+.language_framework_skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  gap: 24px;
+  width: 95vw;
+  height: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 95vw;
+  height: 70vh;
+  flex: none;
+  flex-grow: 0;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages_card {
+  order: 0;
+}
+
+.frameworks_card {
+  order: 1;
+}
+
+.skills_card {
+  order: 2;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.language-container,
+.framework-container,
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.framework-container,
+.skills-container {
+  height: 144px;
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.language_list,
+.frameworks_list,
+.skills_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.language_list li,
+.frameworks_list li,
+.skills_list li {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  color: #36b37e;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.resume_btn:hover {
+  width: 120px;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  display: flex;
+  align-items: center;
+}
+
+.resume_btn:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background-color: #008552;
 }
