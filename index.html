@@ -230,19 +230,35 @@
         <section id="contact-form-container">
           <h1 class="contact_header">
             I'm always interested in hearing about new projects, so if you'd
-            like to chat plese get in touch.
+            like to chat please get in touch.
           </h1>
-          <form action="" method="post">
-            <input type="text" name="" id="name" placeholder="Full name" />
+          <form action="https://formspree.io/f/mgeqgkld" method="post">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full name"
+              minlength="1"
+              maxlength="30"
+              required
+            />
             <input
               type="email"
-              name=""
+              name="email"
               id="email"
               placeholder="Email address"
+              required
             />
-            <textarea name="" id="" cols="30" rows="10">
-Enter text here</textarea
-            >
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              minlength="1"
+              maxlength="500"
+              placeholder="Enter text here"
+              required
+            ></textarea>
             <button class="contact_btn" type="submit">Get in touch</button>
           </form>
           <ul class="social-media-icons">
@@ -271,7 +287,7 @@ Enter text here</textarea
             </li>
           </ul>
         </section>
-        <a href="">myemailhere@email.com</a>
+        <a class="email_link" href="">myemailhere@email.com</a>
       </main>
     </div>
   </body>
