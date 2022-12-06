@@ -540,14 +540,11 @@ main {
 
 /* Contact section styling */
 #contact-form-container {
-  background-image: url("./images/illustration-contact-form.png");
-  background-repeat: no-repeat;
-  background-position-y: calc(870px);
-  background-position-x: 280px;
   padding: 64px 24px 15px;
   display: flex;
   flex-direction: column;
   gap: 58px;
+  position: relative;
 }
 
 .contact_header {
@@ -622,4 +619,12 @@ textarea {
   line-height: 24px;
   font-family: "Inter", sans-serif;
   padding: 8px;
+}
+
+.form-image {
+  width: 92px;
+  height: 131px;
+  position: absolute;
+  left: 350px;
+  top: 800px;
 }
