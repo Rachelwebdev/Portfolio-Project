@@ -575,6 +575,14 @@ form {
   border-radius: 4px;
 }
 
+.contact_btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.contact_btn:active {
+  background-color: #008552;
+}
+
 .email_link {
   text-decoration: none;
   display: flex;
