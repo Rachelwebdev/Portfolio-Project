@@ -14,16 +14,21 @@ body {
 
 .main-container {
   width: 100%;
+  background-color: #ffffff;
 }
 
 /* Navigation bar Styles */
 
-header {
+.mobile-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
   width: 100%;
   padding-inline: 24px;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 .hamburger {
@@ -627,4 +632,38 @@ textarea {
   position: absolute;
   left: 70%;
   top: 85%;
+}
+
+@media (min-width: 768px) {
+  /* Navigation bar */
+  .mobile-nav {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-links li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 16px 0;
+  }
+
+  .desktop-links li a {
+    text-decoration: none;
+    padding: 10px 12px;
+    color: #344563;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
