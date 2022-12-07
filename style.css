@@ -9,7 +9,6 @@
 body {
   width: 100%;
   height: 100vh;
-  margin-inline: auto;
 }
 
 .main-container {
@@ -67,8 +66,8 @@ main {
 #headline-container {
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  width: 95vw;
+  background-size: cover;
+  width: 95%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -78,7 +77,7 @@ main {
 }
 
 .header-text {
-  width: 95vw;
+  width: 95%;
   height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -97,7 +96,7 @@ main {
 }
 
 .profile-description {
-  width: 95vw;
+  width: 95%;
   height: auto;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -112,7 +111,7 @@ main {
 }
 
 .social-media-icons {
-  width: 70vw;
+  width: 70%;
   height: auto;
   flex: none;
   order: 2;
@@ -131,10 +130,11 @@ main {
 /*  Recent Works Section Styling */
 
 .recent_works_container {
-  width: 95vw;
+  width: 95%;
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 64px 24px;
   margin: auto;
@@ -149,7 +149,7 @@ main {
 }
 
 .works_heading {
-  width: 95vw;
+  width: 95%;
   height: auto;
   color: #172b4d;
   font-family: "Inter", sans-serif;
@@ -185,7 +185,7 @@ main {
 /* Individual card styling for projects */
 
 .single_project_card {
-  width: 95vw;
+  width: 95%;
   height: 100vh;
   flex: none;
   flex-grow: 0;
@@ -231,7 +231,7 @@ main {
   align-items: center;
   padding: 16px;
   gap: 16px;
-  width: 95vw;
+  width: 95%;
   height: auto;
   background-color: #fff;
   border-radius: 8px;
@@ -239,7 +239,7 @@ main {
 
 .project_title {
   font-family: "Inter", sans-serif;
-  width: 95vw;
+  width: 95%;
   height: auto;
   font-style: normal;
   font-weight: 600;
@@ -258,10 +258,10 @@ main {
 
 .technologies_container {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 90vw;
+  width: 95%;
   height: auto;
   flex: none;
   order: 1;
@@ -312,7 +312,7 @@ main {
   display: flex;
   background-color: #36b37f;
   border-radius: 4px;
-  padding: 12px;
+  padding: 15px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -329,7 +329,6 @@ main {
 }
 
 .project-btn:hover {
-  width: 91px;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   display: flex;
   align-items: center;
@@ -353,7 +352,7 @@ main {
   padding: 64px 24px;
   gap: 58px;
   position: absolute;
-  width: 95vw;
+  width: 95%;
   height: auto;
 }
 
@@ -362,7 +361,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  width: 95vw;
+  width: 95%;
   height: auto;
   flex: none;
   order: 0;
@@ -373,18 +372,18 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85vw;
+  width: 85%;
 }
 
 .illustration-bottom-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 85vw;
+  width: 85%;
 }
 
 .about_me_heading {
-  width: 95vw;
+  width: 95%;
   height: auto;
   font-family: "Inter", sans-serif;
   font-style: 700;
@@ -395,7 +394,7 @@ main {
 }
 
 .about_me_description {
-  width: 95vw;
+  width: 95%;
   height: auto;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -408,6 +407,7 @@ main {
 .resume_btn {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -634,6 +634,8 @@ textarea {
   top: 85%;
 }
 
+/* DESKTOP VERSION MEDIA QUERY */
+
 @media (min-width: 768px) {
   /* Navigation bar */
   .mobile-nav {
@@ -665,5 +667,35 @@ textarea {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  /* Header section  */
+
+  /* .headline-container {
+    margin: 72px 260px 208px;
+    background-image: url("./images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 95vw;
+    height: auto;
+  } */
+
+  /* Recent Works */
+  .project_section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .technology {
+    /* padding: 4px 6px; */
+    /* width: 33%; */
+  }
+
+  .technologies_container {
+    width: 50%;
+  }
+
+  .about_me_description {
+    max-width: 920px;
   }
 }
