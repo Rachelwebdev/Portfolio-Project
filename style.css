@@ -351,7 +351,6 @@ main {
   align-items: center;
   padding: 64px 24px;
   gap: 58px;
-  position: absolute;
   width: 95%;
   height: auto;
 }
@@ -368,18 +367,20 @@ main {
   flex-grow: 0;
 }
 
-.illustration-top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
+.about-me-illustration-container {
+  position: relative;
 }
 
-.illustration-bottom-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
+.top-illustration {
+  position: absolute;
+  top: -30%;
+  left: 85%;
+}
+
+.bottom-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 90%;
 }
 
 .about_me_heading {
