@@ -55,7 +55,7 @@ body {
 
 /* Main Section */
 main {
-  width: 95vw;
+  width: 95%;
   height: auto;
   background-color: #fff;
   margin: auto;
@@ -222,7 +222,6 @@ main {
   background-color: #ebf0ee;
   border-radius: 8px;
   height: 50%;
-  overflow: hidden;
 }
 
 .project_title_container {
@@ -296,7 +295,7 @@ main {
 }
 
 .css {
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   order: 1;
 }
 
@@ -371,16 +370,24 @@ main {
   position: relative;
 }
 
-.top-illustration {
+.top-illustration-mobile {
   position: absolute;
   top: -30%;
   left: 85%;
 }
 
-.bottom-illustration {
+.top-illustration-desktop {
+  display: none;
+}
+
+.bottom-illustration-mobile {
   position: absolute;
   bottom: 0;
   right: 90%;
+}
+
+.bottom-illustration-desktop {
+  display: none;
 }
 
 .about_me_heading {
@@ -445,7 +452,7 @@ main {
 }
 
 .card {
-  width: 95vw;
+  width: 95%;
   height: 70vh;
   flex: none;
   flex-grow: 0;
@@ -672,14 +679,10 @@ textarea {
 
   /* Header section  */
 
-  /* .headline-container {
-    margin: 72px 260px 208px;
+  #headline-container {
     background-image: url("./images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 95vw;
-    height: auto;
-  } */
+  }
 
   /* Recent Works */
   .project_section {
@@ -687,16 +690,79 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .technology {
-    /* padding: 4px 6px; */
-    /* width: 33%; */
+  .single_project_card {
+    padding-bottom: 100px;
+  }
+
+  .project-btn {
+    height: 40px;
+    font-size: 14px;
+
+    /* padding: 10px; */
   }
 
   .technologies_container {
-    width: 50%;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 15px;
+    /* padding: 0 5px; */
   }
 
+  .technologies_container li {
+    /* margin: 0 auto; */
+    padding: 0 10px;
+    /* width: 60px; */
+  }
+
+  .technology {
+    flex: none;
+    flex-grow: 0;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #ebf0ee;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+    border-radius: 4px;
+  }
+
+  /* About me section */
+
   .about_me_description {
-    max-width: 920px;
+    width: 57%;
+  }
+
+  .top-illustration-mobile {
+    display: none;
+  }
+
+  .bottom-illustration-mobile {
+    display: none;
+  }
+
+  .top-illustration-desktop {
+    display: block;
+    position: absolute;
+    top: -30%;
+    left: 80%;
+    /* width: 150px;
+    height: 245px; */
+  }
+
+  .bottom-illustration-desktop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+
+    /* width: 200px;
+    height: 129px; */
   }
 }
