@@ -828,10 +828,12 @@ textarea {
     width: 48%;
   }
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 4px;
-    font-size: 10px;
+  .contact_btn {
+    margin: 0;
+    width: 35%;
+  }
+
+  .form-image {
+    display: none;
   }
 }
