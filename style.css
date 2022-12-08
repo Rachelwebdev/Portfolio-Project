@@ -557,7 +557,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 58px;
-  position: relative;
 }
 
 .contact_header {
@@ -595,6 +594,14 @@ form {
 
 .contact_btn:active {
   background-color: #008552;
+}
+
+.contact-links {
+  position: relative;
+}
+
+.social-media {
+  padding-bottom: 20px;
 }
 
 .email_link {
@@ -639,7 +646,7 @@ textarea {
   height: 131px;
   position: absolute;
   left: 70%;
-  top: 85%;
+  top: -100px;
 }
 
 /* DESKTOP VERSION MEDIA QUERY */
@@ -763,4 +770,15 @@ textarea {
   .resume_btn {
     width: 20%;
   }
+
+  /* Languages, Frameworks and Skills Cards Styling */
+  .language_framework_skills {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  /* Contact section styling */
 }
