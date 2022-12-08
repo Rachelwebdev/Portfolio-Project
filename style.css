@@ -375,7 +375,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
+  width: 95%;
   height: auto;
   margin-top: 4rem;
 }
@@ -584,6 +584,10 @@ textarea {
   }
 
   /* Recent Works */
+  .works_heading {
+    width: 100%;
+  }
+
   .project_section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -676,7 +680,7 @@ textarea {
   }
 
   .contact_header {
-    width: 40%;
+    width: 35%;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
@@ -684,27 +688,14 @@ textarea {
   }
 
   form {
-    width: 60%;
+    width: 50%;
   }
 
-  .first-last-name-inputs {
-    display: block;
-    width: 100%;
-  }
-
-  .full-name-container {
+  /* .full-name-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  #first-name {
-    width: 48%;
-  }
-
-  #last-name {
-    width: 48%;
-  }
+  } */
 
   .contact_btn {
     margin: 0;
