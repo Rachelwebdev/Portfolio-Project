@@ -67,7 +67,7 @@ main {
   background-image: url("./images/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 95%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -167,12 +167,13 @@ main {
 
 .single_project_card {
   width: 95%;
-  height: 100vh;
+  height: 474px;
   flex: none;
   flex-grow: 0;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
 
 .project_img_placeholder {
@@ -381,7 +382,7 @@ main {
 
 .card {
   width: 95%;
-  height: 70vh;
+  height: 352px;
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
