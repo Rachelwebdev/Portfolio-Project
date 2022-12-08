@@ -394,7 +394,7 @@ main {
 }
 
 .icon {
-  width: 30%;
+  /* width: 30%; */
 }
 
 .language-container,
@@ -432,7 +432,7 @@ main {
 .frameworks_list li,
 .skills_list li {
   background-color: #fff;
-  padding: 12px;
+  padding: 4px;
   border-radius: 8px;
   color: #36b37e;
   font-family: "Inter", sans-serif;
@@ -456,16 +456,13 @@ main {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  margin-top: 4rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.first-last-name-inputs {
-  display: none;
 }
 
 .contact_btn {
@@ -675,6 +672,7 @@ textarea {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 4rem;
   }
 
   .contact_header {
@@ -682,16 +680,11 @@ textarea {
     font-size: 1.8rem;
     display: flex;
     align-items: center;
-    padding-top: 1rem;
     line-height: 2.5rem;
   }
 
   form {
     width: 60%;
-  }
-
-  #full-name {
-    display: none;
   }
 
   .first-last-name-inputs {
