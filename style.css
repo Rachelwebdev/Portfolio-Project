@@ -410,6 +410,7 @@ main {
   line-height: 32px;
   text-align: center;
   color: #42526e;
+  padding-bottom: 20px;
 }
 
 .resume_btn {
@@ -432,6 +433,21 @@ main {
   text-align: center;
   color: #fff;
   margin: auto;
+}
+
+.resume_btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  display: flex;
+  align-items: center;
+}
+
+.resume_btn:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background-color: #008552;
 }
 
 /* Languages, Frameworks and Skills Cards Styling */
@@ -533,22 +549,6 @@ main {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-}
-
-.resume_btn:hover {
-  width: 120px;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  display: flex;
-  align-items: center;
-}
-
-.resume_btn:active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  background-color: #008552;
 }
 
 /* Contact section styling */
@@ -684,6 +684,10 @@ textarea {
     background-repeat: no-repeat;
   }
 
+  .profile-description {
+    width: 60%;
+  }
+
   /* Recent Works */
   .project_section {
     grid-template-columns: repeat(3, 1fr);
@@ -697,8 +701,6 @@ textarea {
   .project-btn {
     height: 40px;
     font-size: 14px;
-
-    /* padding: 10px; */
   }
 
   .technologies_container {
@@ -706,13 +708,10 @@ textarea {
     justify-content: center;
     align-items: center;
     padding-inline-start: 15px;
-    /* padding: 0 5px; */
   }
 
   .technologies_container li {
-    /* margin: 0 auto; */
     padding: 0 10px;
-    /* width: 60px; */
   }
 
   .technology {
@@ -752,8 +751,6 @@ textarea {
     position: absolute;
     top: -30%;
     left: 80%;
-    /* width: 150px;
-    height: 245px; */
   }
 
   .bottom-illustration-desktop {
@@ -761,8 +758,9 @@ textarea {
     position: absolute;
     bottom: 0;
     right: 80%;
+  }
 
-    /* width: 200px;
-    height: 129px; */
+  .resume_btn {
+    width: 20%;
   }
 }
