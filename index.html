@@ -259,12 +259,34 @@
             <input
               type="text"
               name="name"
-              id="name"
+              id="full-name"
               placeholder="Full name"
               minlength="1"
               maxlength="30"
               required
             />
+            <!-- Display none for mobile -->
+            <div class="first-last-name-inputs full-name-container">
+              <input
+                type="text"
+                name="firstname"
+                id="first-name"
+                placeholder="First name"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+              <input
+                type="text"
+                name="lastname"
+                id="last-name"
+                placeholder="Last name"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+            <!-- end of display for mobile -->
             <input
               type="email"
               name="email"
@@ -272,11 +294,12 @@
               placeholder="Email address"
               required
             />
+
             <textarea
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="5"
               minlength="1"
               maxlength="500"
               placeholder="Enter text here"
