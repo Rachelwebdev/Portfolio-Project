@@ -11,12 +11,23 @@
     <div class="main-container">
       <!-- Header Section -->
       <header>
-        <a class="logo-text" href="#">Welcome</a>
-        <nav class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </nav>
+        <div class="mobile-nav">
+          <a class="logo-text" href="#">Welcome</a>
+          <nav class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </nav>
+        </div>
+        <div class="desktop-nav">
+          <nav class="nav_links">
+            <ul class="desktop-links">
+              <li><a href="#project">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <!-- Headline Section -->
@@ -60,7 +71,7 @@
         </section>
 
         <!-- Recent Works Section -->
-        <section class="recent_works_container">
+        <section id="project" class="recent_works_container">
           <div class="heading-container">
             <h1 class="works_heading">MY Recent Works</h1>
             <div class="indicator"></div>
@@ -148,25 +159,37 @@
           </div>
         </section>
         <!-- About myself section -->
-        <section id="about_myself_container">
-          <div class="about_me">
-            <div class="illustration-top-container">
+        <section id="about" class="about_myself_container">
+          <div class="about-me-illustration-container">
+            <div class="about_me">
               <h1 class="about_me_heading">About me</h1>
               <img
-                class="illustration-img-top"
-                src="./images/about-me-illustration-top.png"
+                class="top-illustration-mobile"
+                src="./images/about-me-illustration-top.svg"
                 alt=""
               />
-            </div>
+              <img
+                class="top-illustration-desktop"
+                src="./images/illustration-about-me-top-desktop.svg"
+                alt=""
+              />
 
-            <p class="about_me_description">
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don’t hestiate to contact me.
-            </p>
-            <div class="illustration-bottom-container">
-              <img src="./images/about-me-illustration-bottom.png" alt="" />
+              <p class="about_me_description">
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and
+                have a project you need coded, don’t hestiate to contact me.
+              </p>
               <button class="resume_btn">Get My Resume</button>
+              <img
+                class="bottom-illustration-mobile"
+                src="./images/about-me-illustration-bottom.svg"
+                alt=""
+              />
+              <img
+                class="bottom-illustration-desktop"
+                src="./images/illustration-about-me-bottom-desktop.svg"
+                alt=""
+              />
             </div>
           </div>
 
@@ -227,7 +250,7 @@
           </section>
         </section>
         <!-- Contact Section -->
-        <section id="contact-form-container">
+        <section id="contact" class="contact-form-container">
           <h1 class="contact_header">
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
@@ -236,12 +259,13 @@
             <input
               type="text"
               name="name"
-              id="name"
+              id="full-name"
               placeholder="Full name"
               minlength="1"
               maxlength="30"
               required
             />
+
             <input
               type="email"
               name="email"
@@ -249,11 +273,12 @@
               placeholder="Email address"
               required
             />
+
             <textarea
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="5"
               minlength="1"
               maxlength="500"
               placeholder="Enter text here"
@@ -262,7 +287,27 @@
             <button class="contact_btn" type="submit">Get in touch</button>
             <div class="background-image"></div>
           </form>
-          <ul class="social-media-icons">
+        </section>
+
+        <footer id="footer" class="contact-links">
+          <div class="desktop-illustrations-container">
+            <img
+              class="image-left-1"
+              src="./images/left-bottom-contact-illustration-desktop.svg"
+              alt=""
+            />
+            <img
+              class="image-middle-2"
+              src="./images/left-middle-contact-illustration-desktop.svg"
+              alt=""
+            />
+            <img
+              class="image-right-3"
+              src="./images/right-contact-illustration-desktop.svg"
+              alt=""
+            />
+          </div>
+          <ul class="social-media-icons social-media">
             <li>
               <a href="https://twitter.com/Rachelisaac13"
                 ><img class="icons" src="images/twitter.png" alt="twitter icon"
@@ -287,9 +332,14 @@
               /></a>
             </li>
           </ul>
-          <img src="images/illustration-contact-form.png" alt="contact form image" class="form-image">
-        </section>
-        <a class="email_link" href="">myemailhere@email.com</a>
+          <img
+            src="images/illustration-contact-form.png"
+            alt="contact form image"
+            class="form-image"
+          />
+
+          <a class="email_link" href="">myemailhere@email.com</a>
+        </footer>
       </main>
     </div>
   </body>
