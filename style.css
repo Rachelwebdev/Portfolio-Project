@@ -552,7 +552,7 @@ main {
 }
 
 /* Contact section styling */
-#contact-form-container {
+.contact-form-container {
   padding: 64px 24px 15px;
   display: flex;
   flex-direction: column;
@@ -604,6 +604,10 @@ form {
   position: relative;
 }
 
+.desktop-illustrations-container {
+  display: none;
+}
+
 .social-media {
   padding-bottom: 20px;
 }
@@ -622,12 +626,7 @@ form {
   line-height: 32px;
 }
 
-input[type="text"] {
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #d0d9d4;
-}
-
+input[type="text"],
 input[type="email"] {
   padding: 8px;
   border-radius: 4px;
@@ -778,6 +777,7 @@ textarea {
   /* Languages, Frameworks and Skills Cards Styling */
   .language_framework_skills {
     flex-direction: row;
+    justify-content: center;
   }
 
   .card {
@@ -785,7 +785,8 @@ textarea {
   }
 
   /* Contact section styling */
-  #contact-form-container {
+  .contact-form-container {
+    width: 95%;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -834,6 +835,42 @@ textarea {
   }
 
   .form-image {
+    display: none;
+  }
+
+  .contact-links {
+    margin-top: 20rem;
+    position: relative;
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .social-media {
+    padding-top: 1rem;
+  }
+
+  .desktop-illustrations-container {
+    display: block;
+  }
+
+  .image-left-1 {
+    position: absolute;
+    bottom: 60%;
+    right: 83%;
+  }
+
+  .image-middle-2 {
+    position: absolute;
+    bottom: 200%;
+    right: 70%;
+  }
+
+  .image-right-3 {
+    position: absolute;
+    bottom: 120%;
+    left: 80%;
+  }
+
+  .email_link {
     display: none;
   }
 }
