@@ -85,6 +85,20 @@ main {
   text-align: center;
   color: #172b4d;
   padding-bottom: 2rem;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .occupation {
@@ -174,6 +188,12 @@ main {
   border-radius: 8px;
   overflow: hidden;
   padding-bottom: 4rem;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.single_project_card:hover {
+  transform: scale(0.9);
 }
 
 .project_img_placeholder {
@@ -255,6 +275,8 @@ main {
   align-items: center;
   text-align: center;
   color: #fff;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .project-btn:hover {
@@ -262,6 +284,7 @@ main {
   display: flex;
   align-items: center;
   text-align: justify;
+  transform: scale(1.2);
 }
 
 .project-btn:active {
@@ -270,6 +293,7 @@ main {
   align-items: center;
   padding: 1.3rem;
   background-color: #008552;
+  transform: scale(1.2);
 }
 
 /* About myself section styling */
@@ -352,12 +376,15 @@ main {
   text-align: center;
   color: #fff;
   margin: auto;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .resume_btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   display: flex;
   align-items: center;
+  transform: scale(1.2);
 }
 
 .resume_btn:active {
@@ -366,6 +393,7 @@ main {
   align-items: center;
   padding: 0.7rem;
   background-color: #008552;
+  transform: scale(1.2);
 }
 
 /* Languages, Frameworks and Skills Cards Styling */
@@ -391,10 +419,6 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 1rem 2rem;
-}
-
-.icon {
-  /* width: 30%; */
 }
 
 .language-container,
@@ -477,14 +501,18 @@ form {
   border: none;
   padding: 0.7rem;
   border-radius: 4px;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .contact_btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.2);
 }
 
 .contact_btn:active {
   background-color: #008552;
+  transform: scale(1.2);
 }
 
 .contact-links {
@@ -570,6 +598,16 @@ textarea {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.25rem;
+    transition-property: color font-size, text-decoration;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .desktop-links li a:hover {
+    cursor: pointer;
+    color: #36b37f;
+    text-decoration: underline;
+    font-size: 1.2rem;
   }
 
   /* Header section  */
@@ -577,6 +615,27 @@ textarea {
   #headline-container {
     background-image: url("./images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
+  }
+
+  .header-text {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    50% {
+      font-size: 4rem;
+    }
+
+    100% {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .profile-description {
