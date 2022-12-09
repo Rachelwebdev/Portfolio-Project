@@ -85,6 +85,20 @@ main {
   text-align: center;
   color: #172b4d;
   padding-bottom: 2rem;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .occupation {
@@ -583,6 +597,27 @@ textarea {
   #headline-container {
     background-image: url("./images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
+  }
+
+  .header-text {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    50% {
+      font-size: 4rem;
+    }
+
+    100% {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .profile-description {
