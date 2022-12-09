@@ -393,10 +393,6 @@ main {
   margin: 0 1rem 2rem;
 }
 
-.icon {
-  /* width: 30%; */
-}
-
 .language-container,
 .framework-container,
 .skills-container {
@@ -570,6 +566,16 @@ textarea {
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.25rem;
+    transition-property: color font-size, text-decoration;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .desktop-links li a:hover {
+    cursor: pointer;
+    color: #36b37f;
+    text-decoration: underline;
+    font-size: 1.2rem;
   }
 
   /* Header section  */
