@@ -8,6 +8,7 @@
 - [🛠 Built With](#built-with)
 - [Tech Stack](#tech-stack)
 - [Key Features](#key-features)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -41,6 +42,16 @@
 - An HTML File
 - A CSS File
 - An md file
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+>
+
+- [Live Demo Link](https://rachelwebdev.github.io/Portfolio-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
