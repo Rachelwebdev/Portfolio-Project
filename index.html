@@ -256,6 +256,7 @@
             like to chat please get in touch.
           </h1>
           <form action="https://formspree.io/f/mgeqgkld" method="post">
+            <label for="full-name" hidden>Full name</label><br />
             <input
               type="text"
               name="name"
@@ -265,7 +266,7 @@
               maxlength="30"
               required
             />
-
+            <label for="email" hidden>Email Address</label>
             <input
               type="email"
               name="email"
@@ -273,7 +274,7 @@
               placeholder="Email address"
               required
             />
-
+            <label for="message" hidden>Text</label><br />
             <textarea
               name="message"
               id="message"
