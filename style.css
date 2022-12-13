@@ -102,7 +102,7 @@ main {
 }
 
 .occupation {
-  color: #36b37e;
+  color: #2d624c;
 }
 
 .profile-description {
@@ -169,7 +169,7 @@ main {
   width: 3rem;
   height: 4px;
   border-radius: 24px;
-  background-color: #36b37e;
+  background-color: #2d624c;
 }
 
 .project_section {
@@ -262,7 +262,7 @@ main {
 
 .project-btn {
   display: flex;
-  background-color: #36b37f;
+  background-color: #2d624c;
   border-radius: 4px;
   padding: 1rem;
   border: none;
@@ -365,7 +365,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0.75rem;
-  background: #36b37f;
+  background: #2d624c;
   border-radius: 4px;
   border: none;
   font-family: "Inter", sans-serif;
@@ -392,7 +392,7 @@ main {
   flex-direction: row;
   align-items: center;
   padding: 0.7rem;
-  background-color: #008552;
+  background-color: #2d624c;
   transform: scale(1.2);
 }
 
@@ -458,7 +458,7 @@ main {
   background-color: #fff;
   padding: 4px;
   border-radius: 8px;
-  color: #36b37e;
+  color: #2d624c;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -496,7 +496,7 @@ form {
   line-height: 1.5rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
-  background-color: #36b37f;
+  background-color: #2d624c;
   color: #fff;
   border: none;
   padding: 0.7rem;
@@ -549,7 +549,7 @@ input[type="email"] {
 }
 
 textarea {
-  border: 1px solid #60c095;
+  border: 1px solid #2d624c;
   border-radius: 4px;
   font-style: normal;
   font-weight: 400;
@@ -605,7 +605,7 @@ textarea {
 
   .desktop-links li a:hover {
     cursor: pointer;
-    color: #36b37f;
+    color: #2d624c;
     text-decoration: underline;
     font-size: 1.2rem;
   }
