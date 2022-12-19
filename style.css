@@ -11,6 +11,11 @@ body {
   height: 100vh;
 }
 
+a{
+  text-decoration: none;
+
+}
+
 .main-container {
   width: 100%;
   background-color: #fff;
@@ -30,6 +35,29 @@ body {
   display: none;
 }
 
+.cell-nav{
+  height: 100vh;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-start;
+  background-color: white;
+  padding-left: 1.8rem;
+  font-family: "Inter", sans-serif;
+
+}
+
+.cell-nav li {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+.cell-nav a{
+  color: #3A4A42;
+  font-weight: 600;
+  font-size: 32px;
+}
+
 .hamburger {
   margin-right: 24px;
 }
@@ -40,6 +68,18 @@ body {
   height: 3px;
   margin: 5px;
   background-color: #101010;
+}
+
+.bar-hover:hover .bar:nth-child(2){
+  opacity: 0;
+}
+
+.bar-hover:hover .bar:nth-child(1){
+  transform: translateY( 8px) rotate(45deg);
+}
+
+.bar-hover:hover .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .logo-text {
