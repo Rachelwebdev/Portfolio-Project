@@ -9,48 +9,36 @@
   </head>
   <body>
     <div class="main-container">
-      <!-- Header Section -->
       <header>
         <div class="mobile-nav">
           <a class="logo-text" href="#">Welcome</a>
           <nav class="hamburger">
             <div class="bar-hover">
-              <span class="bar "></span>
-              <span class="bar "></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
               <span class="bar"></span>
             </div>
           </nav>
         </div>
         <div class="desktop-nav">
           <nav class="nav_links">
-            <ul class="desktop-links">
+            <ul class="desktop-links nav-menu">
               <li><a href="#project">Portfolio</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
-        <div class="mobile-nav nav-open">
-          <a class="logo-text" href="#">Welcome</a>
-          <nav class="hamburger">
-            <div class="bar-hover">
-              <span class="bar "></span>
-              <span class="bar "></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        </div>
-        <div class="cell-nav ">
-          <nav class="nav_links">
-            <ul class="desktop-links">
-              <li><a href="#project">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+        <!-- Mobile Hamburger Menu display -->
+        <div class="hamburger-menu-container menu-container">
+          <ul class="hamburger-nav-menu">
+            <li><a class="nav-link" href="#project">Portfolio</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </header>
-  
+
       <!-- Headline Section -->
       <main>
         <section id="headline-container">
@@ -63,7 +51,7 @@
             some of my work and experience! If you like what you see and have a
             project you need coded, don't hestiate to contact me.
           </p>
-  
+
           <ul class="social-media-icons">
             <li>
               <a href="https://twitter.com/Rachelisaac13"
@@ -90,14 +78,14 @@
             </li>
           </ul>
         </section>
-  
+
         <!-- Recent Works Section -->
         <section id="project" class="recent_works_container">
           <div class="heading-container">
             <h1 class="works_heading">MY Recent Works</h1>
             <div class="indicator"></div>
           </div>
-  
+
           <div class="project_section">
             <div class="single_project_card card-1">
               <div class="project_img_placeholder"></div>
@@ -194,7 +182,7 @@
                 src="./images/illustration-about-me-top-desktop.svg"
                 alt="background image illustration"
               />
-  
+
               <p class="about_me_description">
                 I can help you build a product , feature or website Look through
                 some of my work and experience! If you like what you see and
@@ -213,7 +201,7 @@
               />
             </div>
           </div>
-  
+
           <!-- Languages Card -->
           <section class="language_framework_skills">
             <div class="languages_card card">
@@ -310,7 +298,7 @@
             <div class="background-image"></div>
           </form>
         </section>
-  
+
         <footer id="footer" class="contact-links">
           <div class="desktop-illustrations-container">
             <img
@@ -359,10 +347,11 @@
             alt="background image illustration"
             class="form-image"
           />
-  
+
           <a class="email_link" href="">myemailhere@email.com</a>
         </footer>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
