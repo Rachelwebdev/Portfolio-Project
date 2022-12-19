@@ -8,12 +8,12 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
-a{
+ul li a {
   text-decoration: none;
-
+  scroll-behavior: smooth;
 }
 
 .main-container {
@@ -22,6 +22,18 @@ a{
 }
 
 /* Navigation bar Styles */
+
+.logo-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  margin-left: 12px;
+  color: #28352f;
+  text-decoration: none;
+  z-index: -1;
+}
 
 .mobile-nav {
   display: flex;
@@ -35,39 +47,10 @@ a{
   display: none;
 }
 
-.cell-nav{
-  height: 100vh;
-  display: none;
-  gap: 40px;
-  justify-content: flex-start;
-  background-color: white;
-  padding-left: 1.8rem;
-  font-family: "Inter", sans-serif;
-
-}
-
-.nav-open{
-  display: none;
-}
-
-.cell-nav-display{
-  display: flex;
-}
-
-.cell-nav li {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 1rem 0;
-}
-
-.cell-nav a{
-  color: #3A4A42;
-  font-weight: 600;
-  font-size: 32px;
-}
-
 .hamburger {
   margin-right: 24px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .bar {
@@ -76,29 +59,53 @@ a{
   height: 3px;
   margin: 5px;
   background-color: #101010;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-open .bar:nth-child(2){
+.hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.nav-open .bar:nth-child(1){
-  transform: translateY( 8px) rotate(45deg);
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
-.nav-open .bar:nth-child(3){
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-.logo-text {
+.hamburger-menu-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.hamburger-nav-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+  margin-left: 2rem;
+  padding-top: 4rem;
+}
+
+.menu-container {
+  position: fixed;
+}
+
+.hamburger-nav-menu a {
+  color: #3a4a42;
+  font-weight: 600;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  align-items: center;
-  text-align: center;
-  margin-left: 12px;
-  color: #28352f;
-  text-decoration: none;
+  font-size: 2rem;
 }
 
 /* Main Section */
@@ -656,6 +663,10 @@ textarea {
     color: #2d624c;
     text-decoration: underline;
     font-size: 1.2rem;
+  }
+
+  .hamburger-menu-container {
+    display: none;
   }
 
   /* Header section  */
