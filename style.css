@@ -37,13 +37,21 @@ a{
 
 .cell-nav{
   height: 100vh;
-  display: flex;
+  display: none;
   gap: 40px;
   justify-content: flex-start;
   background-color: white;
   padding-left: 1.8rem;
   font-family: "Inter", sans-serif;
 
+}
+
+.nav-open{
+  display: none;
+}
+
+.cell-nav-display{
+  display: flex;
 }
 
 .cell-nav li {
@@ -70,15 +78,15 @@ a{
   background-color: #101010;
 }
 
-.bar-hover:hover .bar:nth-child(2){
+.nav-open .bar:nth-child(2){
   opacity: 0;
 }
 
-.bar-hover:hover .bar:nth-child(1){
+.nav-open .bar:nth-child(1){
   transform: translateY( 8px) rotate(45deg);
 }
 
-.bar-hover:hover .bar:nth-child(3){
+.nav-open .bar:nth-child(3){
   transform: translateY(-8px) rotate(-45deg);
 }
 
