@@ -32,7 +32,6 @@ ul li a {
   margin-left: 12px;
   color: #28352f;
   text-decoration: none;
-  z-index: -1;
 }
 
 .mobile-nav {
@@ -69,10 +68,12 @@ ul li a {
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  background-color: #67798e;
 }
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+  background-color: #67798e;
 }
 
 .hamburger-menu-container {
