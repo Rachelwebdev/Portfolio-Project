@@ -131,3 +131,37 @@ const projectObject6 = {
 };
 
 projectArray.push(projectObject6);
+
+// ----------CLASS AND ID SELECTORS----------------
+const projectTitle = document.querySelectorAll(".project_title");
+const rubyTechnology = document.querySelectorAll(".ruby");
+const cssTechnology = document.querySelectorAll(".css");
+const javascriptTechnology = document.querySelectorAll(".javascript");
+const htmlTechnology = document.querySelectorAll(".html");
+
+// ----CONVERT NODELIST TO ARRAY ------------
+const projectTitleArray = Array.from(projectTitle);
+const rubyTechnologyArray = Array.from(rubyTechnology);
+const cssTechnologyArray = Array.from(cssTechnology);
+const javascriptTechnologyArray = Array.from(javascriptTechnology);
+const htmlTechnologyArray = Array.from(htmlTechnology);
+
+// -----------ITERATE OVER THE MAIN PROJECT ARRAY--------------
+for (let i = 0; i < projectArray.length; i++) {
+  // -----------ITERATE OVER EACH PROJECT CONTENT----------
+  for (let i = 0; i < projectTitleArray.length; i++) {
+    projectTitleArray[i].innerHTML = projectArray[i].projectName;
+  }
+  for (let i = 0; i < rubyTechnologyArray.length; i++) {
+    rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+  }
+  for (let i = 0; i < cssTechnologyArray.length; i++) {
+    cssTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+  }
+  for (let i = 0; i < javascriptTechnologyArray.length; i++) {
+    javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+  }
+  for (let i = 0; i < htmlTechnologyArray.length; i++) {
+    htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+  }
+}
