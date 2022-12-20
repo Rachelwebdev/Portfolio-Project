@@ -9,24 +9,33 @@
   </head>
   <body>
     <div class="main-container">
-      <!-- Header Section -->
       <header>
         <div class="mobile-nav">
           <a class="logo-text" href="#">Welcome</a>
           <nav class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <div class="bar-hover">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </nav>
         </div>
         <div class="desktop-nav">
           <nav class="nav_links">
-            <ul class="desktop-links">
+            <ul class="desktop-links nav-menu">
               <li><a href="#project">Portfolio</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+        </div>
+        <!-- Mobile Hamburger Menu display -->
+        <div class="hamburger-menu-container menu-container">
+          <ul class="hamburger-nav-menu">
+            <li><a class="nav-link" href="#project">Portfolio</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </header>
 
@@ -343,5 +352,6 @@
         </footer>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
