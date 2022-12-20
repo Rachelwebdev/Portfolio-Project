@@ -39,6 +39,7 @@ const projectObject1 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject1);
@@ -56,6 +57,7 @@ const projectObject2 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject2);
@@ -74,6 +76,7 @@ const projectObject3 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject3);
@@ -92,6 +95,7 @@ const projectObject4 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject4);
@@ -110,6 +114,7 @@ const projectObject5 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject5);
@@ -128,6 +133,7 @@ const projectObject6 = {
   },
   liveLink: "",
   sourceLink: "",
+  projectButton: "See Project",
 };
 
 projectArray.push(projectObject6);
@@ -138,6 +144,7 @@ const rubyTechnology = document.querySelectorAll(".ruby");
 const cssTechnology = document.querySelectorAll(".css");
 const javascriptTechnology = document.querySelectorAll(".javascript");
 const htmlTechnology = document.querySelectorAll(".html");
+const projectButton = document.querySelectorAll(".project-btn");
 
 // ----CONVERT NODELIST TO ARRAY ------------
 const projectTitleArray = Array.from(projectTitle);
@@ -145,6 +152,7 @@ const rubyTechnologyArray = Array.from(rubyTechnology);
 const cssTechnologyArray = Array.from(cssTechnology);
 const javascriptTechnologyArray = Array.from(javascriptTechnology);
 const htmlTechnologyArray = Array.from(htmlTechnology);
+const projectButtonArray = Array.from(projectButton);
 
 // -----------ITERATE OVER THE MAIN PROJECT ARRAY--------------
 for (let i = 0; i < projectArray.length; i++) {
@@ -163,5 +171,8 @@ for (let i = 0; i < projectArray.length; i++) {
   }
   for (let i = 0; i < htmlTechnologyArray.length; i++) {
     htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.four;
+  }
+  for (let i = 0; i < projectButtonArray.length; i++) {
+    projectButtonArray[i].innerHTML = projectArray[i].projectButton;
   }
 }
