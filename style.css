@@ -352,6 +352,86 @@ main {
   transform: scale(1.2);
 }
 
+/* mobile popup window */
+.mobile-popup-container {
+  display: none;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.popup-project-title {
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+}
+
+.popup-technologies {
+  display: flex;
+  justify-content: start;
+}
+
+.popup-technologies li {
+  list-style-type: none;
+  margin: 1rem 0.5rem 1rem 0;
+}
+
+.project-description {
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.live-source-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-live {
+  background: #2d624c;
+  border-radius: 4px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  width: 40%;
+  padding: 5px;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.button-icons {
+  margin-left: 1.5rem;
+}
+
+.btn-live:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  display: flex;
+  align-items: center;
+  transform: scale(1.2);
+}
+
+.btn-live:active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2d624c;
+  transform: scale(1.2);
+}
+
+.desktop-popup-container {
+  display: none;
+}
 /* About myself section styling */
 .about_myself_container {
   display: flex;
@@ -745,6 +825,49 @@ textarea {
     letter-spacing: 0.03em;
     color: #3a4a42;
     border-radius: 4px;
+  }
+  /* Desktop Popup window */
+  .desktop-popup-container {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .heading-button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-desktop-img {
+    width: 100%;
+  }
+
+  .popup-project-title {
+    width: 50%;
+  }
+
+  .desktop-live-source-button-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .desktop-btn-live {
+    background-color: #008552;
+    color: white;
+    border: none;
+    text-align: center;
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  .desktop-project-description {
+    color: #344563;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
   }
 
   /* About me section */
