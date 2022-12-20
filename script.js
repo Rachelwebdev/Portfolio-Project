@@ -156,12 +156,12 @@ for (let i = 0; i < projectArray.length; i++) {
     rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
   }
   for (let i = 0; i < cssTechnologyArray.length; i++) {
-    cssTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+    cssTechnologyArray[i].innerHTML = projectArray[i].technologies.two;
   }
   for (let i = 0; i < javascriptTechnologyArray.length; i++) {
-    javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+    javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.three;
   }
   for (let i = 0; i < htmlTechnologyArray.length; i++) {
-    htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+    htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.four;
   }
 }
