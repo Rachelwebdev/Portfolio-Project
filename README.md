@@ -120,6 +120,4 @@ I would like to thank Microverse for the learning materials provided for this ex
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 📝 License
-This project is [MIT](./LICENSE) licensed.
-
-\_NOTE: we recommend using the [MIT license](https://github.com/Rachelwebdev/Portfolio-Project/blob/mobile-nav/LICENSE.md)
+This project is [MIT](https://github.com/Rachelwebdev/Portfolio-Project/blob/mobile-nav/LICENSE.md) licensed.
