@@ -301,7 +301,10 @@ main {
   margin-right: 0.25rem;
 }
 
-.technology {
+.technology,
+.ruby-technology,
+.css-technology,
+.javascript-technology {
   flex: none;
   flex-grow: 0;
   padding: 0.25rem 0.5rem;
@@ -354,12 +357,13 @@ main {
 
 /* mobile popup window */
 .mobile-popup-container {
-  /* display: none; */
   background-color: #fff;
   border-radius: 8px;
   padding: 0.5rem;
 }
-
+.project-image {
+  width: 100%;
+}
 .popup-project-title {
   font-family: "Inter", sans-serif;
   color: #172b4d;
@@ -404,8 +408,8 @@ main {
   text-align: center;
   color: #fff;
   margin: auto;
-  width: 40%;
-  padding: 5px;
+  text-decoration: none;
+  padding: 4px 16px;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
@@ -828,7 +832,7 @@ textarea {
   }
   /* Desktop Popup window */
   .desktop-popup-container {
-    display: none;
+    /* display: none; */
     margin: 2rem 0;
   }
 
