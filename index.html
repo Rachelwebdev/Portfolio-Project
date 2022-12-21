@@ -4,11 +4,356 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Rachel's Portfolio</title>
   </head>
   <body class="body">
+    <header class="header-container">
+      <a href="#" class="logo">My Logo </a>
+      <nav class="desktop-nav-display">
+        <img
+          class="mobile-nav cell-nav"
+          src="images/Union.png"
+          alt=" Navigation "
+        />
+    
+        <ul class="desktop-nav">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="cellphone-nav">
+        <ul class="nav">
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <img
+          class="mobile-nav-icon cell-nav"
+          src="images/Icon.svg"
+          alt=" Navigation"
+        />
+      </nav>
+    </header>
+    <div class="container">
+      <section aria-labelledby="basic-introduction" class="hero">
+        <h1 id="basic-introduction">I’m Malik Glad to see you!</h1>
+        <p class="hero-text">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <article>
+          <h3>LET’S CONNECT</h3>
+          <ul class="social-media">
+            <li>
+              <a href="#">
+                <img src="images/Vector.png" alt="Twitter link" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/Linkedin icon.png" alt=" Linkedin link" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/Vector m.png" alt=" Medium link" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/Vector (2).png" alt="Github link" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/Vector (3).png" alt="Angellist link" />
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </div>
+    
+    <section id="portfolio" title="portfolio-snapshot" class="card-works-box">
+      <article class="card-work flex-order">
+        <picture>
+          <source
+            media="(min-width:1230px)"
+            srcset="images/desktop-snapshot-3.svg"
+          />
+          <source
+            media="(min-width:400px)"
+            srcset="images/mobile-Snapshoot-1.svg"
+          />
+          <img src="images/mobile-Snapshoot-1.svg" alt=" Portfolio snapshoot" />
+        </picture>
+        <div class="card-info-box">
+          <h2 class="client-title">Tonic</h2>
+          <ul class="client">
+            <li class="client-name">CANOPY</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">Back End Dev</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">2015</li>
+          </ul>
+          <p class="clint-info-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="framework-box">
+            <li class="framework btn--normal">html</li>
+            <li class="framework btn--normal ruby">Ruby on rails</li>
+            <li class="framework btn--normal">css</li>
+            <li class="framework btn--normal">javascript</li>
+          </ul>
+          <div>
+            <button type="button" id="0" class="btn btn--normal btn-card card-btn">See Project</button>
+          </div>
+        </div>
+      </article>
+      <article class="card-work flex-order-reveerse">
+        <picture>
+          <source
+            media="(min-width:1230px)"
+            srcset="images/desktop-snapshot-4.svg"
+          />
+          <source
+            media="(min-width:400px)"
+            srcset="images/mobile-Snapshoot-2.svg"
+          />
+          <img src="images/mobile-Snapshoot-2.svg" alt="Portfolio snapshoot" />
+        </picture>
+        <div class="card-info-box">
+          <h2 class="client-title">Multi-Post Stories</h2>
+          <ul class="client">
+            <li class="client-name">FACEBOOK</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">Back End Dev</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">2015</li>
+          </ul>
+          <p class="clint-info-text">
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
+          </p>
+          <ul class="framework-box">
+            <li class="framework btn--normal">html</li>
+            <li class="framework btn--normal ruby">Ruby on rails</li>
+            <li class="framework btn--normal">css</li>
+            <li class="framework btn--normal">javascript</li>
+          </ul>
+          <div>
+            <button type="button" id="1" class="btn btn--normal btn-card card-btn">See Project</button>
+          </div>
+        </div>
+      </article>
+      <article class="card-work flex-order">
+        <picture>
+          <source
+            media="(min-width:1230px)"
+            srcset="images/desktop-snapshot-1.svg"
+          />
+          <source
+            media="(min-width:400px)"
+            srcset="images/mobile-Snapshoot-3.svg"
+          />
+          <img src="images/mobile-Snapshoot-3.svg" alt="Portfolio snapshoot" />
+        </picture>
+        <div class="card-info-box">
+          <h2 class="client-title">Facebook 360</h2>
+          <ul class="client">
+            <li class="client-name">FACEBOOK</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">Back End Dev</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">2015</li>
+          </ul>
+          <p class="clint-info-text">
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
+          </p>
+          <ul class="framework-box">
+            <li class="framework btn--normal">html</li>
+            <li class="framework btn--normal ruby">Ruby on rails</li>
+    
+            <li class="framework btn--normal">css</li>
+            <li class="framework btn--normal">javascript</li>
+          </ul>
+          <div>
+            <button type="button" id="2" class="btn btn--normal btn-card card-btn">See Project</button>
+          </div>
+        </div>
+      </article>
+      <article class="card-work flex-order-reveerse">
+        <picture>
+          <source
+            media="(min-width:1230px)"
+            srcset="images/desktop-snapshot-2.svg"
+          />
+          <source
+            media="(min-width:400px)"
+            srcset="images/mobile-Snapshoot-4.svg"
+          />
+          <img src="images/mobile-Snapshoot-4.svg" alt="Portfolio snapshoot" />
+        </picture>
+        <div class="card-info-box">
+          <h2 class="client-title">Uber Navigation</h2>
+          <ul class="client">
+            <li class="client-name">UBER</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">Back End Dev</li>
+            <li><div class="counter"></div></li>
+            <li class="client-info">2015</li>
+          </ul>
+          <p class="clint-info-text">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
+          <ul class="framework-box">
+            <li class="framework btn--normal">html</li>
+            <li class="framework btn--normal ruby">Ruby on rails</li>
+            <li class="framework btn--normal">css</li>
+            <li class="framework btn--normal">javascript</li>
+          </ul>
+          <div>
+            <button type="button" id="3" class="btn btn--normal btn-card card-btn">See Project</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="about" class="about-contact-box">
+      <section aria-labelledby="about-myself" class="about-myself about-box">
+        <article>
+          <h2 id="about-myself" class="heading-about">About Myself</h2>
+          <p class="hero-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <article>
+            <h3>LET’S CONNECT</h3>
+            <ul class="social-media">
+              <li>
+                <a href="#">
+                  <img src="images/Vector.png" alt="Twitter link" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/Linkedin icon.png" alt="Linkedin link" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/Vector m.png" alt="Medium link" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/Vector (2).png" alt="Github link" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/Vector (3).png" alt="Angellist" />
+                </a>
+              </li>
+            </ul>
+          </article>
+          <button class="btn btn--normal">Get my resume</button>
+        </article>
+        <article>
+          <div class="frameworks">
+            <h5 class="framework-heading">Languages</h5>
+            <img class="arrow" src="images/arrow.png" alt="Languages link" />
+          </div>
+          <ul class="language-box">
+            <li class="language-frame">
+              <img
+                class="ellipse"
+                src="images/Ellipse 1.png"
+                alt="JavaSript icon"
+              />
+              <h4 class="ellipse-text">JavaSript</h4>
+            </li>
+            <li class="language-frame">
+              <img class="ellipse" src="images/Ellipse 1 (1).png" alt="HTML" />
+              <h4 class="ellipse-text">HTML</h4>
+            </li>
+            <li class="language-frame">
+              <img class="ellipse" src="images/Ellipse 1 (2).png" alt="CSS" />
+              <h4 class="ellipse-text">CSS</h4>
+            </li>
+          </ul>
+          <div class="frameworks">
+            <h5 class="framework-heading">Frameworks</h5>
+            <img class="arrow" src="images/arrow.png" alt="Frameworks" />
+          </div>
+          <hr />
+          <div class="frameworks">
+            <h5 class="framework-heading">Skills</h5>
+            <img class="arrow" src="images/arrow.png" alt="Skills" />
+          </div>
+          <hr />
+        </article>
+      </section>
+      <form
+        id="contact"
+        class="form-container"
+        action="https://formspree.io/f/xqkjrppo"
+        method="post"
+      >
+        <h2 class="contact-me">Contact me</h2>
+        <p class="contact-info">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <article class="input-container">
+          <label for="name">Name</label>
+          <input
+            class="contact-input"
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Yeremias"
+            maxlength="30"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="natajayanj14@gmail.com"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            class="contact-input"
+            name="message"
+            id="message"
+            maxlength="500"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn--normal btn-form">
+            Get In Touch
+          </button>
+        </article>
+      </form>
+    </section>
     <script src="script.js"></script>
-    <script src="popup.js"></script>
   </body>
 </html>
