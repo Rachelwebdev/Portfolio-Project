@@ -173,16 +173,24 @@ const projectArray = [
 
 const startingPoint = document.querySelector(".body");
 
-// -------------MOBILE POPUP-----------
+// -------------MOBILE POPUP---------------------------------
 function creatMobilePopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
     `<div class="mobile-popup-container">
-  <img
-    class="project-image"
-    src="./images/popup-mobile-img.svg"
-    alt="project display image"
-  />
+    <div class="mobile-image-icon-container">
+      <img
+          class="cancel-icon-mobile"
+          src="./images/cross-X-btn-mobile.svg"
+          alt="project display image"
+        />
+      <img
+          class="project-image"
+          src="./images/popup-mobile-img.svg"
+          alt="project display image"
+        />
+    </div>
+  
   <h3 class="popup-project-title">
   </h3>
   <ul class="popup-technologies">
@@ -236,14 +244,14 @@ technologies3M.textContent = projectArray[0].technologies3;
 liveLinkM.setAttribute("src", projectArray[0].liveLink);
 sourceLinkM.setAttribute("src", projectArray[0].sourceLink);
 
-// -------------DESKTOP POPUP-----------
+// -------------DESKTOP POPUP------------------------------------
 function createDesktopPopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
     `<div class="desktop-popup-container">
         <img
-          class="cancel-icon"
-          src="./images/cross-X-btn.svg"
+          class="cancel-icon-desktop"
+          src="./images/cross-X-btn-desktop.svg"
           alt="project display image"
         />
         <img
