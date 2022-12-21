@@ -1,31 +1,165 @@
 // -----------ADD FUNCTION TO MOBILE MENU BAR------------
 
-const hamburger = document.querySelector(".hamburger");
-const mobileMenuBar = document.querySelector(".hamburger-menu-container");
-const navLinks = document.querySelectorAll(".nav-link");
+// const hamburger = document.querySelector(".hamburger");
+// const mobileMenuBar = document.querySelector(".hamburger-menu-container");
+// const navLinks = document.querySelectorAll(".nav-link");
 
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  mobileMenuBar.classList.toggle("show-menu");
-}
+// function mobileMenu() {
+//   hamburger.classList.toggle("active");
+//   mobileMenuBar.classList.toggle("show-menu");
+// }
 
-hamburger.addEventListener("click", mobileMenu);
+// hamburger.addEventListener("click", mobileMenu);
 
-function removeMenu() {
-  mobileMenuBar.classList.remove("show-menu");
-  hamburger.classList.remove("active");
-}
-const navLinksArray = Array.from(navLinks);
-// eslint-disable-next-line no-plusplus
-for (let i = 0; i < navLinksArray.length; i++) {
-  navLinksArray[i].addEventListener("click", removeMenu);
-}
+// function removeMenu() {
+//   mobileMenuBar.classList.remove("show-menu");
+//   hamburger.classList.remove("active");
+// }
+// const navLinksArray = Array.from(navLinks);
+// // eslint-disable-next-line no-plusplus
+// for (let i = 0; i < navLinksArray.length; i++) {
+//   navLinksArray[i].addEventListener("click", removeMenu);
+// }
 
 // -----------REFACTOR PROJECT SECTION----------------
 
 // Store project information in array
-const projectArray = [];
-console.log(projectArray);
+const projectArray = [{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+},
+{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+},{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+},{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+},{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+},{
+  projectName: "Multi-Post Stories Gain+Glory",
+  projectDescription: "",
+  projectImage: "",
+  technologies: {
+    one: "Ruby on rails",
+    two: "css",
+    three: "JavaScript",
+    four: "html",
+  },
+  liveLink: "",
+  sourceLink: "",
+  projectButton: "See Project",
+}];
+
+const startingPoint=document.querySelector('.body')
+
+function creatMobilePopup(){
+  startingPoint.insertAdjacentHTML('afterbegin',`<div class="mobile-popup-container">
+  <img
+    src="./images/popup-mobile-img.svg"
+    alt="project display image"
+  />
+  <h3 class="popup-project-title">
+  </h3>
+  <ul class="popup-technologies">
+    <li class="ruby technology">Ruby on rails</li>
+    <li class="css technology">css</li>
+    <li class="javascript technology">javascript</li>
+  </ul>
+  <p class="project-description">
+    Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry. Lorem Ipsum has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a galley of
+    type and scrambled it 1960s with the releaLorem Ipsum is simply
+    dummy text of the printing and typesetting industry. Lorem Ipsum
+    has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it
+    1960s with the relea
+  </p>
+  <div class="live-source-button-container">
+    <button class="btn-live">
+      See Live
+      <span
+        ><img
+          class="button-icons"
+          src="./images/see-live-icon.svg"
+          alt="white live icon"
+      /></span>
+    </button>
+    <button class="btn-live">
+      See Source
+      <span
+        ><img
+          src="./images/github-popup-icon.svg"
+          alt="white github icon"
+      /></span>
+    </button>
+  </div>
+</div>` )
+}
+creatMobilePopup()
+
+
+const projectName=document.querySelector('.popup-project-title')
+
+
+projectName.textContent= projectArray[0].projectName
+
+
 // console.log(projectArray[0]);
 
 // for (let i = 0; i < projectArray.length; i++) {
@@ -33,141 +167,31 @@ console.log(projectArray);
 // }
 
 // Store project data in Javascript objects
-const projectObject1 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
-
-projectArray.push(projectObject1);
-
-// --------------------------------------------
-const projectObject2 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
-
-projectArray.push(projectObject2);
 
 // --------------------------------------------
 
-const projectObject3 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
-
-projectArray.push(projectObject3);
 
 // --------------------------------------------
 
-const projectObject4 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
-
-projectArray.push(projectObject4);
 
 // --------------------------------------------
 
-const projectObject5 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
+// --------------------------------------------
 
-projectArray.push(projectObject5);
+
+
 
 // --------------------------------------------
 
-const projectObject6 = {
-  projectName: "Multi-Post Stories Gain+Glory",
-  projectDescription: "",
-  projectImage: "",
-  technologies: {
-    one: "Ruby on rails",
-    two: "css",
-    three: "JavaScript",
-    four: "html",
-  },
-  liveLink: "",
-  sourceLink: "",
-  projectButton: "See Project",
-};
 
-projectArray.push(projectObject6);
 
-// ----------CLASS AND ID SELECTORS----------------
-const projectTitle = document.querySelectorAll(".project_title");
-// const rubyTechnology = document.querySelectorAll(".ruby");
-// const cssTechnology = document.querySelectorAll(".css");
-// const javascriptTechnology = document.querySelectorAll(".javascript");
-// const htmlTechnology = document.querySelectorAll(".html");
-// const projectButton = document.querySelectorAll(".project-btn");
-console.log(projectTitle);
 
-// ----CONVERT NODELIST TO ARRAY ------------
-const projectTitleArray = Array.from(projectTitle);
-// const rubyTechnologyArray = Array.from(rubyTechnology);
-// const cssTechnologyArray = Array.from(cssTechnology);
-// const javascriptTechnologyArray = Array.from(javascriptTechnology);
-// const htmlTechnologyArray = Array.from(htmlTechnology);
-// const projectButtonArray = Array.from(projectButton);
-
-console.log(projectTitleArray);
 // -----------ITERATE OVER THE MAIN PROJECT ARRAY--------------
 // for (let i = 0; i < projectArray.length; i++) {
 // -----------ITERATE OVER EACH PROJECT CONTENT----------
-for (let i = 0; i < projectTitleArray.length; i++) {
-  projectTitleArray[i].innerHTML = projectArray[i].projectName;
-}
+// for (let i = 0; i < projectTitleArray.length; i++) {
+//   projectTitleArray[i].innerHTML = projectArray[i].projectName;
+// }
 // for (let i = 0; i < rubyTechnologyArray.length; i++) {
 //   rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
 // }

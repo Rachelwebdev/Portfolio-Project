@@ -354,7 +354,7 @@ main {
 
 /* mobile popup window */
 .mobile-popup-container {
-  display: none;
+  /* display: none; */
   background-color: #fff;
   border-radius: 8px;
   padding: 0.5rem;
