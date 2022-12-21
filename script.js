@@ -25,6 +25,12 @@ for (let i = 0; i < navLinksArray.length; i++) {
 
 // Store project information in array
 const projectArray = [];
+console.log(projectArray);
+// console.log(projectArray[0]);
+
+// for (let i = 0; i < projectArray.length; i++) {
+// console.log(projectArray[i]);
+// }
 
 // Store project data in Javascript objects
 const projectObject1 = {
@@ -140,39 +146,42 @@ projectArray.push(projectObject6);
 
 // ----------CLASS AND ID SELECTORS----------------
 const projectTitle = document.querySelectorAll(".project_title");
-const rubyTechnology = document.querySelectorAll(".ruby");
-const cssTechnology = document.querySelectorAll(".css");
-const javascriptTechnology = document.querySelectorAll(".javascript");
-const htmlTechnology = document.querySelectorAll(".html");
-const projectButton = document.querySelectorAll(".project-btn");
+// const rubyTechnology = document.querySelectorAll(".ruby");
+// const cssTechnology = document.querySelectorAll(".css");
+// const javascriptTechnology = document.querySelectorAll(".javascript");
+// const htmlTechnology = document.querySelectorAll(".html");
+// const projectButton = document.querySelectorAll(".project-btn");
+console.log(projectTitle);
 
 // ----CONVERT NODELIST TO ARRAY ------------
 const projectTitleArray = Array.from(projectTitle);
-const rubyTechnologyArray = Array.from(rubyTechnology);
-const cssTechnologyArray = Array.from(cssTechnology);
-const javascriptTechnologyArray = Array.from(javascriptTechnology);
-const htmlTechnologyArray = Array.from(htmlTechnology);
-const projectButtonArray = Array.from(projectButton);
+// const rubyTechnologyArray = Array.from(rubyTechnology);
+// const cssTechnologyArray = Array.from(cssTechnology);
+// const javascriptTechnologyArray = Array.from(javascriptTechnology);
+// const htmlTechnologyArray = Array.from(htmlTechnology);
+// const projectButtonArray = Array.from(projectButton);
 
+console.log(projectTitleArray);
 // -----------ITERATE OVER THE MAIN PROJECT ARRAY--------------
-for (let i = 0; i < projectArray.length; i++) {
-  // -----------ITERATE OVER EACH PROJECT CONTENT----------
-  for (let i = 0; i < projectTitleArray.length; i++) {
-    projectTitleArray[i].innerHTML = projectArray[i].projectName;
-  }
-  for (let i = 0; i < rubyTechnologyArray.length; i++) {
-    rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
-  }
-  for (let i = 0; i < cssTechnologyArray.length; i++) {
-    cssTechnologyArray[i].innerHTML = projectArray[i].technologies.two;
-  }
-  for (let i = 0; i < javascriptTechnologyArray.length; i++) {
-    javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.three;
-  }
-  for (let i = 0; i < htmlTechnologyArray.length; i++) {
-    htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.four;
-  }
-  for (let i = 0; i < projectButtonArray.length; i++) {
-    projectButtonArray[i].innerHTML = projectArray[i].projectButton;
-  }
+// for (let i = 0; i < projectArray.length; i++) {
+// -----------ITERATE OVER EACH PROJECT CONTENT----------
+for (let i = 0; i < projectTitleArray.length; i++) {
+  projectTitleArray[i].innerHTML = projectArray[i].projectName;
 }
+// for (let i = 0; i < rubyTechnologyArray.length; i++) {
+//   rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
+// }
+// console.log(projectArray[i].technologies.one);
+// for (let i = 0; i < cssTechnologyArray.length; i++) {
+//   cssTechnologyArray[i].innerHTML = projectArray[i].technologies.two;
+// }
+// for (let i = 0; i < javascriptTechnologyArray.length; i++) {
+//   javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.three;
+// }
+// for (let i = 0; i < htmlTechnologyArray.length; i++) {
+//   htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.four;
+// }
+// for (let i = 0; i < projectButtonArray.length; i++) {
+//   projectButtonArray[i].innerHTML = projectArray[i].projectButton;
+// }
+// }
