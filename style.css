@@ -16,6 +16,10 @@ ul li a {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-container {
   width: 100%;
   background-color: #fff;
@@ -362,23 +366,28 @@ main {
 }
 
 /* MOBILE OVERLAY */
-.modal-desktop-overlay {
+/* .modal-desktop-overlay {
   display: none;
-}
+} */
 
 .modal-mobile-overlay {
-  background-color: #c1c7d0;
+  background-color: rgb(193, 199, 208, 80%);
   display: none;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   padding: 1rem 0;
+  position: absolute;
+  z-index: 10;
+  overflow-y: auto;
+  top: 0;
 }
 
 .popuphide {
   display: none;
 }
+
 .popup {
   display: flex;
 }
@@ -400,6 +409,7 @@ main {
   position: absolute;
   top: 2%;
   left: 83.5%;
+  cursor: pointer;
 }
 
 .project-image {
@@ -872,17 +882,16 @@ textarea {
   /* Desktop Popup window */
 
   .modal-desktop-overlay {
-    background-color: #c1c7d0;
+    background-color: rgb(193, 199, 208, 80%);
     display: none;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow-y: auto;
+    top: 0;
   }
-
-  /* .modal-mobile-overlay {
-    display: none;
-  } */
 
   .popup {
     display: none;

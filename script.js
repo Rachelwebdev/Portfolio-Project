@@ -177,8 +177,8 @@ const startingPoint = document.querySelector(".body");
 function creatMobilePopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
-    `<div class="modal-mobile-overlay popup">
-    <div class="mobile-popup-container">
+    `<div id="popup-window" class="modal-mobile-overlay popup">
+    <div id="popup-window" class="mobile-popup-container">
     <div class="mobile-image-icon-container">
       <img
           class="cancel-icon-mobile"
@@ -250,7 +250,7 @@ sourceLinkM.setAttribute("src", projectArray[0].sourceLink);
 function createDesktopPopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
-    `<div class="modal-desktop-overlay popuphide">
+    `<div id="popup-window" class="modal-desktop-overlay popuphide">
     <div class="desktop-popup-container">
         <img
           class="cancel-icon-desktop"
@@ -330,37 +330,51 @@ sourceLinkD.setAttribute("src", projectArray[0].sourceLink);
 const projectButton = Array.from(document.querySelectorAll(".project-btn"));
 const modal = document.querySelector(".modal-desktop-overlay");
 const modalMobile = document.querySelector(".modal-mobile-overlay");
+const modal2 = document.querySelector(".desktop-popup-container");
+const modalMobile2 = document.querySelector(".mobile-popup-container");
 const background = document.querySelector(".body");
 const closeModal = document.querySelector(".cancel-icon-desktop");
 const closeModalMobile = document.querySelector(".cancel-icon-mobile");
+const hideDesktopPopup = document.querySelector(".popuphide");
+const hideMobilePopup = document.querySelector(".popup");
 
-const minWidth = startingPoint.offsetWidth;
-
+// const minWidth = startingPoint.offsetWidth;
+// const minWidth = startingPoint.offsetWidth;
+//   if (minWidth < 768)
 // DESKTOP OVERLAY
-projectButton.forEach((project) => {
-  const showModal = () => {
-    if (minWidth < 768) {
-      modalMobile.style.display = "flex";
-    } else {
-      modal.style.display = "flex";
-    }
-  };
-  const removeModal = () => {
-    modal.style.display = "none";
-    // modalMobile.style.display = "none";
-  };
-  project.addEventListener("click", showModal);
-  closeModal.addEventListener("click", removeModal);
-});
 
-// MOBILE OVERLAY
+// mobile
+function openModalMobile() {
+  modalMobile.style.display = "flex";
+  modal.style.display = "none";
+}
+
+function collapseMobileModal() {
+  modalMobile.style.display = "none";
+}
+// desktop
+function openModalDesktop() {
+  modal.style.display = "flex";
+  modalMobile.style.display = "none";
+}
+
+function collapseDesktopModal() {
+  modal.style.display = "none";
+}
+
+collapseDesktopModal();
+collapseMobileModal();
+
 projectButton.forEach((project) => {
-  const showModal = () => {
-    modalMobile.style.display = "flex";
-  };
-  const removeModal = () => {
-    modalMobile.style.display = "none";
-  };
-  project.addEventListener("click", showModal);
-  closeModalMobile.addEventListener("click", removeModal);
+  project.addEventListener("click", function () {
+    if (window.innerWidth < 768) {
+      collapseDesktopModal();
+      openModalMobile();
+    } else {
+      collapseMobileModal();
+      openModalDesktop();
+    }
+  });
 });
+closeModalMobile.addEventListener("click", collapseMobileModal);
+closeModal.addEventListener("click", collapseDesktopModal);
