@@ -16,7 +16,6 @@ function removeMenu() {
   hamburger.classList.remove('active');
 }
 const navLinksArray = Array.from(navLinks);
-// eslint-disable-next-line no-plusplus
 for (let i = 0; i < navLinksArray.length; i++) {
   navLinksArray[i].addEventListener('click', removeMenu);
 }
