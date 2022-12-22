@@ -177,7 +177,8 @@ const startingPoint = document.querySelector(".body");
 function creatMobilePopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
-    `<div class="mobile-popup-container">
+    `<div class="modal-mobile-overlay popup">
+    <div class="mobile-popup-container">
     <div class="mobile-image-icon-container">
       <img
           class="cancel-icon-mobile"
@@ -221,6 +222,7 @@ function creatMobilePopup() {
             alt="white github icon" /></span
       ></a>
     </div>
+</div>
 </div>`
   );
 }
@@ -248,7 +250,8 @@ sourceLinkM.setAttribute("src", projectArray[0].sourceLink);
 function createDesktopPopup() {
   startingPoint.insertAdjacentHTML(
     "afterbegin",
-    `<div class="desktop-popup-container">
+    `<div class="modal-desktop-overlay popuphide">
+    <div class="desktop-popup-container">
         <img
           class="cancel-icon-desktop"
           src="./images/cross-X-btn-desktop.svg"
@@ -294,6 +297,7 @@ function createDesktopPopup() {
           <li class="Codepen-technology"></li>
         </ul>
         <p class="desktop-project-description"></p>
+      </div>
       </div>`
   );
 }
@@ -323,26 +327,39 @@ technologies8.textContent = projectArray[0].technologies8;
 liveLinkD.setAttribute("src", projectArray[0].liveLink);
 sourceLinkD.setAttribute("src", projectArray[0].sourceLink);
 
-// -----------ITERATE OVER THE MAIN PROJECT ARRAY--------------
-// for (let i = 0; i < projectArray.length; i++) {
-// -----------ITERATE OVER EACH PROJECT CONTENT----------
-// for (let i = 0; i < projectTitleArray.length; i++) {
-//   projectTitleArray[i].innerHTML = projectArray[i].projectName;
-// }
-// for (let i = 0; i < rubyTechnologyArray.length; i++) {
-//   rubyTechnologyArray[i].innerHTML = projectArray[i].technologies.one;
-// }
-// console.log(projectArray[i].technologies.one);
-// for (let i = 0; i < cssTechnologyArray.length; i++) {
-//   cssTechnologyArray[i].innerHTML = projectArray[i].technologies.two;
-// }
-// for (let i = 0; i < javascriptTechnologyArray.length; i++) {
-//   javascriptTechnologyArray[i].innerHTML = projectArray[i].technologies.three;
-// }
-// for (let i = 0; i < htmlTechnologyArray.length; i++) {
-//   htmlTechnologyArray[i].innerHTML = projectArray[i].technologies.four;
-// }
-// for (let i = 0; i < projectButtonArray.length; i++) {
-//   projectButtonArray[i].innerHTML = projectArray[i].projectButton;
-// }
-// }
+const projectButton = Array.from(document.querySelectorAll(".project-btn"));
+const modal = document.querySelector(".modal-desktop-overlay");
+const modalMobile = document.querySelector(".modal-mobile-overlay");
+const background = document.querySelector(".body");
+const closeModal = document.querySelector(".cancel-icon-desktop");
+const closeModalMobile = document.querySelector(".cancel-icon-mobile");
+
+// DESKTOP OVERLAY
+projectButton.forEach((project) => {
+  const showModal = () => {
+    const minWidth = windows.innerWidth;
+    if (minWidth < 768) {
+      modalMobile.style.display = "flex";
+    } else {
+      modal.style.display = "flex";
+    }
+  };
+  const removeModal = () => {
+    modal.style.display = "none";
+    // modalMobile.style.display = "none";
+  };
+  project.addEventListener("click", showModal);
+  closeModal.addEventListener("click", removeModal);
+});
+
+// MOBILE OVERLAY
+projectButton.forEach((project) => {
+  const showModal = () => {
+    modalMobile.style.display = "flex";
+  };
+  const removeModal = () => {
+    modalMobile.style.display = "none";
+  };
+  project.addEventListener("click", showModal);
+  closeModalMobile.addEventListener("click", removeModal);
+});
