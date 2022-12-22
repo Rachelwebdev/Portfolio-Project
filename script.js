@@ -4,14 +4,14 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenuBar = document.querySelector('.hamburger-menu-container');
 const navLinks = document.querySelectorAll('.nav-link');
 
-function mobileMenu() {
+const mobileMenu = () => {
   hamburger.classList.toggle('active');
   mobileMenuBar.classList.toggle('show-menu');
 }
 
 hamburger.addEventListener('click', mobileMenu);
 
-function removeMenu() {
+const removeMenu = () => {
   mobileMenuBar.classList.remove('show-menu');
   hamburger.classList.remove('active');
 }
@@ -191,7 +191,7 @@ const projectArray = [
 const startingPoint = document.querySelector('.body');
 
 // -------------MOBILE POPUP---------------------------------
-function creatMobilePopup() {
+const creatMobilePopup = () => {
   startingPoint.insertAdjacentHTML(
     'afterbegin',
     `<div id="popup-window" class="modal-mobile-overlay popup">
@@ -244,7 +244,7 @@ function creatMobilePopup() {
   );
 }
 const projectStart = document.querySelector('.project_section');
-function creatProject() {
+const creatProject = () => {
   projectStart.insertAdjacentHTML(
     'afterbegin',
     `            <div class="single_project_card card-1">
@@ -294,7 +294,7 @@ const liveLinkM = document.querySelector('.live-link');
 const sourceLinkM = document.querySelector('.source-link');
 
 // -------------DESKTOP POPUP------------------------------------
-function createDesktopPopup() {
+const createDesktopPopup = () => {
   startingPoint.insertAdjacentHTML(
     'afterbegin',
     `<div id="popup-window" class="modal-desktop-overlay popuphide">
@@ -370,21 +370,21 @@ const closeModalMobile = document.querySelector('.cancel-icon-mobile');
 
 // DESKTOP OVERLAY
 // mobile
-function openModalMobile() {
+const openModalMobile = () => {
   modalMobile.style.display = 'flex';
   modal.style.display = 'none';
 }
 
-function collapseMobileModal() {
+const collapseMobileModal = () => {
   modalMobile.style.display = 'none';
 }
 // desktop
-function openModalDesktop() {
+const openModalDesktop = () => {
   modal.style.display = 'flex';
   modalMobile.style.display = 'none';
 }
 
-function collapseDesktopModal() {
+const collapseDesktopModal = () => {
   modal.style.display = 'none';
 }
 
