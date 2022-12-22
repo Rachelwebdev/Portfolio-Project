@@ -11,13 +11,13 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul li a {
   text-decoration: none;
   scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
 }
 
 .main-container {
@@ -366,16 +366,11 @@ main {
 }
 
 /* MOBILE OVERLAY */
-/* .modal-desktop-overlay {
-  display: none;
-} */
-
 .modal-mobile-overlay {
   background-color: rgb(193, 199, 208, 80%);
   display: none;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
   width: 100%;
   padding: 1rem 0;
   position: absolute;
@@ -879,8 +874,8 @@ textarea {
     color: #3a4a42;
     border-radius: 4px;
   }
-  /* Desktop Popup window */
 
+  /* Desktop Popup window */
   .modal-desktop-overlay {
     background-color: rgb(193, 199, 208, 80%);
     display: none;
