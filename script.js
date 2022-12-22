@@ -16,7 +16,7 @@ function removeMenu() {
   hamburger.classList.remove('active');
 }
 const navLinksArray = Array.from(navLinks);
-for (let i = 0; i < navLinksArray.length; i++) {
+for (let i = 0; i < navLinksArray.length; i+=1) {
   navLinksArray[i].addEventListener('click', removeMenu);
 }
 
