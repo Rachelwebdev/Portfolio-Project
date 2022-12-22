@@ -334,10 +334,11 @@ const background = document.querySelector(".body");
 const closeModal = document.querySelector(".cancel-icon-desktop");
 const closeModalMobile = document.querySelector(".cancel-icon-mobile");
 
+const minWidth = startingPoint.offsetWidth;
+
 // DESKTOP OVERLAY
 projectButton.forEach((project) => {
   const showModal = () => {
-    const minWidth = windows.innerWidth;
     if (minWidth < 768) {
       modalMobile.style.display = "flex";
     } else {
