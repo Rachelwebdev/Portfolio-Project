@@ -921,7 +921,7 @@ textarea {
     font-weight: 700;
     font-size: 2rem;
     line-height: 44px;
-    width: 68%;
+    width: 75%;
   }
 
   .popup-desktop-img {
@@ -984,7 +984,7 @@ textarea {
   }
 
   .button-icons-desktop {
-    padding: 0 12px 0 24px;
+    padding: 0 12px 0 12px;
   }
 
   .cancel-icon-desktop {

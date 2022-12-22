@@ -1,31 +1,32 @@
 // -----------ADD FUNCTION TO MOBILE MENU BAR------------
 
-// const hamburger = document.querySelector(".hamburger");
-// const mobileMenuBar = document.querySelector(".hamburger-menu-container");
-// const navLinks = document.querySelectorAll(".nav-link");
+const hamburger = document.querySelector(".hamburger");
+const mobileMenuBar = document.querySelector(".hamburger-menu-container");
+const navLinks = document.querySelectorAll(".nav-link");
 
-// function mobileMenu() {
-//   hamburger.classList.toggle("active");
-//   mobileMenuBar.classList.toggle("show-menu");
-// }
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  mobileMenuBar.classList.toggle("show-menu");
+}
 
-// hamburger.addEventListener("click", mobileMenu);
+hamburger.addEventListener("click", mobileMenu);
 
-// function removeMenu() {
-//   mobileMenuBar.classList.remove("show-menu");
-//   hamburger.classList.remove("active");
-// }
-// const navLinksArray = Array.from(navLinks);
-// // eslint-disable-next-line no-plusplus
-// for (let i = 0; i < navLinksArray.length; i++) {
-//   navLinksArray[i].addEventListener("click", removeMenu);
-// }
+function removeMenu() {
+  mobileMenuBar.classList.remove("show-menu");
+  hamburger.classList.remove("active");
+}
+const navLinksArray = Array.from(navLinks);
+// eslint-disable-next-line no-plusplus
+for (let i = 0; i < navLinksArray.length; i++) {
+  navLinksArray[i].addEventListener("click", removeMenu);
+}
 
 // -----------REFACTOR PROJECT SECTION----------------
 
 // Store project information in array
 const projectArray = [
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -45,11 +46,14 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue:0,
   },
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -61,7 +65,7 @@ const projectArray = [
           1960s with the release`,
     projectImageMobile: "./images/popup-mobile-img.svg",
     projectImageDesktop: "./images/popup-desktop-img.svg",
-    technologies1: "Ruby on rails",
+    technologies1: "Ruby on rails1",
     technologies2: "css",
     technologies3: "JavaScript",
     technologies4: "Codekit",
@@ -69,11 +73,14 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue: 1,
   },
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -93,11 +100,14 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue: 2,
   },
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -117,11 +127,14 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue: 3,
   },
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -141,11 +154,14 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue: 4,
   },
   {
+    projectHeading:"Multi-Post Stories Gain+Glory",
     projectName: "Keeping track of hundreds of components",
     projectDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text
@@ -165,9 +181,11 @@ const projectArray = [
     technologies6: "Bootstrap",
     technologies7: "Terminal",
     technologies8: "Codepen",
+    technologies9: "html",
     liveLink: "https://rachelwebdev.github.io/Portfolio-Project/",
     sourceLink: "https://github.com/Rachelwebdev/Portfolio-Project",
     projectButton: "See Project",
+    btnValue: 5,
   },
 ];
 
@@ -226,6 +244,43 @@ function creatMobilePopup() {
 </div>`
   );
 }
+const projectStart=document.querySelector('.project_section')
+function creatProject() {
+  projectStart.insertAdjacentHTML(
+    "afterbegin", `            <div class="single_project_card card-1">
+    <div class="project_img_placeholder"></div>
+    <div class="project_title_container">
+      <h3 class="project_title project-heading"></h3>
+      <ul class="technologies_container">
+        <li class="ruby technology Project-technologies1 "></li>
+        <li class="css technology Project-technologies2"></li>
+        <li class="javascript technology Project-technologies3"></li>
+        <li class="html technology Project-technologies4"></li>
+      </ul>
+      <a href="#popup-window"
+        ><button type="button" id="" class="project-btn">See Project</button></a
+      >
+    </div>
+  </div>`
+  );
+}
+
+for(let i=5 ; i>=0; i--){
+creatProject();
+const projectHeading = document.querySelector('.project-heading')
+const ProjectTechnologies1 = document.querySelector('.Project-technologies1')
+const ProjectTechnologies2 = document.querySelector('.Project-technologies2')
+const ProjectTechnologies3 = document.querySelector('.Project-technologies3')
+const ProjectTechnologies4 = document.querySelector('.Project-technologies4')
+const btnProject=document.querySelector('.project-btn')
+
+projectHeading.textContent =projectArray[i].projectHeading;
+ProjectTechnologies1.textContent=projectArray[i].technologies1;
+ProjectTechnologies2.textContent=projectArray[i].technologies2;
+ProjectTechnologies3.textContent=projectArray[i].technologies3;
+ProjectTechnologies4.textContent=projectArray[i].technologies9;
+btnProject.setAttribute("id", projectArray[i].btnValue);
+}
 creatMobilePopup();
 
 const projectNameM = document.querySelector(".popup-project-title");
@@ -237,14 +292,7 @@ const technologies3M = document.querySelector(".javascript-technology");
 const liveLinkM = document.querySelector(".live-link");
 const sourceLinkM = document.querySelector(".source-link");
 
-projectNameM.textContent = projectArray[0].projectName;
-projectImageM.setAttribute("src", projectArray[0].projectImageMobile);
-descriptionM.textContent = projectArray[0].projectDescription;
-technologies1M.textContent = projectArray[0].technologies1;
-technologies2M.textContent = projectArray[0].technologies2;
-technologies3M.textContent = projectArray[0].technologies3;
-liveLinkM.setAttribute("src", projectArray[0].liveLink);
-sourceLinkM.setAttribute("src", projectArray[0].sourceLink);
+
 
 // -------------DESKTOP POPUP------------------------------------
 function createDesktopPopup() {
@@ -315,19 +363,9 @@ const technologies8 = document.querySelector(".Codepen-technology");
 const liveLinkD = document.querySelector(".live-link-desktop");
 const sourceLinkD = document.querySelector(".source-link-desktop");
 
-projectNameD.textContent = projectArray[0].projectName;
-projectImageD.setAttribute("src", projectArray[0].projectImageDesktop);
-descriptionD.textContent = projectArray[0].projectDescription;
-technologies3D.textContent = projectArray[0].technologies3;
-technologies4.textContent = projectArray[0].technologies4;
-technologies5.textContent = projectArray[0].technologies5;
-technologies6.textContent = projectArray[0].technologies6;
-technologies7.textContent = projectArray[0].technologies7;
-technologies8.textContent = projectArray[0].technologies8;
-liveLinkD.setAttribute("src", projectArray[0].liveLink);
-sourceLinkD.setAttribute("src", projectArray[0].sourceLink);
 
-const projectButton = Array.from(document.querySelectorAll(".project-btn"));
+
+const projectButton = document.querySelectorAll(".project-btn");
 const modal = document.querySelector(".modal-desktop-overlay");
 const modalMobile = document.querySelector(".modal-mobile-overlay");
 const modal2 = document.querySelector(".desktop-popup-container");
@@ -365,7 +403,7 @@ function collapseDesktopModal() {
 collapseDesktopModal();
 collapseMobileModal();
 
-projectButton.forEach((project) => {
+projectButton.forEach((button) => {
   project.addEventListener("click", function () {
     if (window.innerWidth < 768) {
       collapseDesktopModal();
@@ -374,6 +412,27 @@ projectButton.forEach((project) => {
       collapseMobileModal();
       openModalDesktop();
     }
+  let count = button.id;
+projectNameD.textContent = projectArray[count].projectName;
+projectImageD.setAttribute("src", projectArray[count].projectImageDesktop);
+descriptionD.textContent = projectArray[count].projectDescription;
+technologies3D.textContent = projectArray[count].technologies3;
+technologies4.textContent = projectArray[count].technologies4;
+technologies5.textContent = projectArray[count].technologies5;
+technologies6.textContent = projectArray[count].technologies6;
+technologies7.textContent = projectArray[count].technologies7;
+technologies8.textContent = projectArray[count].technologies8;
+liveLinkD.setAttribute("src", projectArray[count].liveLink);
+sourceLinkD.setAttribute("src", projectArray[count].sourceLink);
+
+projectNameM.textContent = projectArray[count].projectName;
+projectImageM.setAttribute("src", projectArray[count].projectImageMobile);
+descriptionM.textContent = projectArray[count].projectDescription;
+technologies1M.textContent = projectArray[count].technologies1;
+technologies2M.textContent = projectArray[count].technologies2;
+technologies3M.textContent = projectArray[count].technologies3;
+liveLinkM.setAttribute("src", projectArray[count].liveLink);
+sourceLinkM.setAttribute("src", projectArray[count].sourceLink);
   });
 });
 closeModalMobile.addEventListener("click", collapseMobileModal);
