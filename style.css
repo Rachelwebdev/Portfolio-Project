@@ -441,6 +441,7 @@ main {
 .live-source-button-container {
   display: flex;
   justify-content: space-between;
+  column-gap: 2rem;
 }
 
 .btn-live {
