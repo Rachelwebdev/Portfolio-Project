@@ -7,14 +7,14 @@ const navLinks = document.querySelectorAll('.nav-link');
 const mobileMenu = () => {
   hamburger.classList.toggle('active');
   mobileMenuBar.classList.toggle('show-menu');
-}
+};
 
 hamburger.addEventListener('click', mobileMenu);
 
 const removeMenu = () => {
   mobileMenuBar.classList.remove('show-menu');
   hamburger.classList.remove('active');
-}
+};
 const navLinksArray = Array.from(navLinks);
 for (let i = 0; i < navLinksArray.length; i += 1) {
   navLinksArray[i].addEventListener('click', removeMenu);
@@ -242,7 +242,7 @@ const creatMobilePopup = () => {
 </div>
 </div>`,
   );
-}
+};
 const projectStart = document.querySelector('.project_section');
 const creatProject = () => {
   projectStart.insertAdjacentHTML(
@@ -263,7 +263,7 @@ const creatProject = () => {
     </div>
   </div>`,
   );
-}
+};
 
 // eslint-disable-next-line no-plusplus
 for (let i = 5; i >= 0; i--) {
@@ -347,7 +347,7 @@ const createDesktopPopup = () => {
       </div>
       </div>`,
   );
-}
+};
 createDesktopPopup();
 
 const projectNameD = document.querySelector('.desktop-popup-project-title');
@@ -373,20 +373,20 @@ const closeModalMobile = document.querySelector('.cancel-icon-mobile');
 const openModalMobile = () => {
   modalMobile.style.display = 'flex';
   modal.style.display = 'none';
-}
+};
 
 const collapseMobileModal = () => {
   modalMobile.style.display = 'none';
-}
+};
 // desktop
 const openModalDesktop = () => {
   modal.style.display = 'flex';
   modalMobile.style.display = 'none';
-}
+};
 
 const collapseDesktopModal = () => {
   modal.style.display = 'none';
-}
+};
 
 collapseDesktopModal();
 collapseMobileModal();
