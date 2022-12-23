@@ -440,4 +440,5 @@ formSubmit.addEventListener("click", (event) => {
   if (email.validity.patternMismatch) {
     error.textContent = "Kindly ensure your email is in lowercase letters";
   }
+  formSubmit.submit();
 });
