@@ -90,8 +90,7 @@
             <div class="indicator"></div>
           </div>
 
-          <div class="project_section">
-          </div>
+          <div class="project_section"></div>
         </section>
         <!-- About myself section -->
         <section id="about" class="about_myself_container">
@@ -202,14 +201,17 @@
               maxlength="30"
               required
             />
+
             <label for="email" hidden>Email Address</label>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email address"
+              pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               required
             />
+
             <label for="message" hidden>Text</label><br />
             <textarea
               name="message"
@@ -221,7 +223,11 @@
               placeholder="Enter text here"
               required
             ></textarea>
-            <button class="contact_btn" type="submit">Get in touch</button>
+            <br />
+            <div id="error" class="error-email-message"></div>
+            <button id="form-button" class="contact_btn" type="submit">
+              Get in touch
+            </button>
             <div class="background-image"></div>
           </form>
         </section>

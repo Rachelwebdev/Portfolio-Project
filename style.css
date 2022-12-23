@@ -704,6 +704,12 @@ form {
   position: relative;
 }
 
+#error {
+  color: rgb(206, 10, 10);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
 .desktop-illustrations-container {
   display: none;
 }

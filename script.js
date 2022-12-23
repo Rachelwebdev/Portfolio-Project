@@ -425,3 +425,22 @@ projectButton.forEach((button) => {
 });
 closeModalMobile.addEventListener('click', collapseMobileModal);
 closeModal.addEventListener('click', collapseDesktopModal);
+
+// FORM VALIDATION
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+const formSubmit = document.getElementById('form-button');
+
+formSubmit.addEventListener('click', (event) => {
+  if (email.validity.typeMismatch) {
+    error.textContent = 'Invalid Email!';
+    event.preventDefault();
+    return;
+  }
+  if (email.validity.patternMismatch) {
+    error.textContent = 'Kindly ensure your email is in lowercase letters';
+    event.preventDefault();
+    return;
+  }
+  formSubmit.submit();
+});
