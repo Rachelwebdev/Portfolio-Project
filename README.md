@@ -97,7 +97,7 @@ Click on the live server button on your IDE
 
 ### Future Features <a name="future-features"></a>
 
-- A popup overlay displaying each project
+- Add different projects to the project section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
