@@ -266,7 +266,7 @@ const creatProject = () => {
 };
 
 // eslint-disable-next-line no-plusplus
-for (let i = 5; i >= 0; i--) {
+for (let i = 5; i >= 0; i -= 1) {
   creatProject();
   const projectHeading = document.querySelector('.project-heading');
   const ProjectTechnologies1 = document.querySelector('.Project-technologies1');
