@@ -704,6 +704,10 @@ form {
   position: relative;
 }
 
+#error {
+  color: red;
+}
+
 .desktop-illustrations-container {
   display: none;
 }
