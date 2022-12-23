@@ -444,3 +444,23 @@ formSubmit.addEventListener('click', (event) => {
   }
   formSubmit.submit();
 });
+
+/* Local Storage */
+
+const fullName = document.getElementById('full-name');
+const message = document.getElementById('message');
+
+function addFormData() {
+  const formDetails = document.getElementById('contact');
+  const contactFormData = new FormData(formDetails);
+  const contactFormObject = Object.fromEntries(contactFormData.entries());
+  localStorage.setItem('form', JSON.stringify(contactFormObject));
+}
+
+email.addEventListener('keydown', addFormData);
+fullName.addEventListener('keydown', addFormData);
+message.addEventListener('keydown', addFormData);
+
+const savedData = JSON.parse(
+  localStorage.getItem('form') ?? '{}',
+);
