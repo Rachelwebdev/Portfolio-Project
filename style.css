@@ -259,7 +259,14 @@ main {
 .project_img_placeholder {
   background-color: #ebf0ee;
   border-radius: 8px;
-  height: 50%;
+  height: 60%;
+}
+
+.project-display-image,
+.project-display-popup {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project_title_container {

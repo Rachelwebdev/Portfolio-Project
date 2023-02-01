@@ -35,8 +35,12 @@ const projectArray = [
           has been the industry's standard dummy text ever since the 1500s,
           when an unknown printer took a galley of type and scrambled it
           1960s with the release`,
-    projectImageMobile: './images/popup-mobile-img.svg',
-    projectImageDesktop: './images/popup-desktop-img.svg',
+    projectImageMobile: `<img
+        class="project-display-image"
+        src="./images/wordchef-mobile.jpg"
+        alt="an event summit website image"
+      />`,
+    projectImageDesktop: './images/wordchef-mobile.jpg',
     technologies1: 'Ruby on rails',
     technologies2: 'css',
     technologies3: 'JavaScript',
@@ -46,10 +50,15 @@ const projectArray = [
     technologies7: 'Terminal',
     technologies8: 'Codepen',
     technologies9: 'html',
-    liveLink: 'https://rachelwebdev.github.io/Portfolio-Project/',
-    sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
+    liveLink: 'https://rachelwebdev.github.io/World-Chef-Capstone-project/',
+    sourceLink: 'https://github.com/Rachelwebdev/World-Chef-Capstone-project',
     projectButton: 'See Project',
     btnValue: 0,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src="./images/wordchef-mobile.jpg"
+        alt="an event summit website image"
+      />`,
   },
   {
     projectHeading: 'Multi-Post Stories Gain+Glory',
@@ -77,6 +86,11 @@ const projectArray = [
     sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
     projectButton: 'See Project',
     btnValue: 1,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src="s"
+        alt="project 2"
+      />`,
   },
   {
     projectHeading: 'Multi-Post Stories Gain+Glory',
@@ -104,6 +118,11 @@ const projectArray = [
     sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
     projectButton: 'See Project',
     btnValue: 2,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src=""
+        alt="project 3"
+      />`,
   },
   {
     projectHeading: 'Multi-Post Stories Gain+Glory',
@@ -131,6 +150,11 @@ const projectArray = [
     sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
     projectButton: 'See Project',
     btnValue: 3,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src=""
+        alt="project 4"
+      />`,
   },
   {
     projectHeading: 'Multi-Post Stories Gain+Glory',
@@ -158,6 +182,11 @@ const projectArray = [
     sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
     projectButton: 'See Project',
     btnValue: 4,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src=""
+        alt="project 5"
+      />`,
   },
   {
     projectHeading: 'Multi-Post Stories Gain+Glory',
@@ -185,6 +214,11 @@ const projectArray = [
     sourceLink: 'https://github.com/Rachelwebdev/Portfolio-Project',
     projectButton: 'See Project',
     btnValue: 5,
+    projectImageDisplay: `<img
+        class="project-display-image"
+        src=""
+        alt="project 6"
+      />`,
   },
 ];
 
@@ -201,14 +235,9 @@ const creatMobilePopup = () => {
           class="cancel-icon-mobile"
           src="./images/cross-X-btn-mobile.svg"
           alt="project display image"
-        />
-      <img
-          class="project-image"
-          src="./images/popup-mobile-img.svg"
-          alt="project display image"
-        />
+        />    
     </div>
-  
+   <div class="project-image"></div>
   <h3 class="popup-project-title">
   </h3>
   <ul class="popup-technologies">
@@ -274,6 +303,9 @@ for (let i = 5; i >= 0; i--) {
   const ProjectTechnologies3 = document.querySelector('.Project-technologies3');
   const ProjectTechnologies4 = document.querySelector('.Project-technologies4');
   const btnProject = document.querySelector('.project-btn');
+  const projectImageDisplay = document.querySelector(
+    '.project_img_placeholder',
+  );
 
   projectHeading.textContent = projectArray[i].projectHeading;
   ProjectTechnologies1.textContent = projectArray[i].technologies1;
@@ -281,6 +313,7 @@ for (let i = 5; i >= 0; i--) {
   ProjectTechnologies3.textContent = projectArray[i].technologies3;
   ProjectTechnologies4.textContent = projectArray[i].technologies9;
   btnProject.setAttribute('id', projectArray[i].btnValue);
+  projectImageDisplay.innerHTML = projectArray[i].projectImageDisplay;
 }
 creatMobilePopup();
 
