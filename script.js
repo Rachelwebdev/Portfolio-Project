@@ -295,7 +295,7 @@ const creatProject = () => {
 };
 
 // eslint-disable-next-line no-plusplus
-for (let i = 5; i >= 0; i--) {
+for (let i = 5; i >= 0; i -= 1) {
   creatProject();
   const projectHeading = document.querySelector('.project-heading');
   const ProjectTechnologies1 = document.querySelector('.Project-technologies1');
@@ -477,3 +477,25 @@ formSubmit.addEventListener('click', (event) => {
   }
   formSubmit.submit();
 });
+
+/* Local Storage */
+
+const fullName = document.getElementById('full-name');
+const message = document.getElementById('message');
+
+function addFormData() {
+  const formDetails = document.getElementById('contact-Form');
+  const contactFormData = new FormData(formDetails);
+  const contactFormObject = Object.fromEntries(contactFormData.entries());
+  localStorage.setItem('form', JSON.stringify(contactFormObject));
+}
+
+email.addEventListener('keydown', addFormData);
+fullName.addEventListener('keydown', addFormData);
+message.addEventListener('keydown', addFormData);
+
+const storedData = JSON.parse(localStorage.getItem('form') ?? '{}');
+
+fullName.value = storedData.name ?? '';
+email.value = storedData.email ?? '';
+message.value = storedData.message ?? '';
